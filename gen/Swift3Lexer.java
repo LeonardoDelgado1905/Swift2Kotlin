@@ -1,4 +1,4 @@
-// Generated from /run/media/manjaroleo/74CA435ECA431C2C/RECOVER/Leonardo Delgado/U/Semestre VII/Lenguajes/Proyecto Final/Swift2Kotlin/grammar/Swift3.g4 by ANTLR 4.9.1
+// Generated from C:/Users/carju/Desktop/LenguajesProgramacion/Swift2Kotlin/grammar\Swift3.g4 by ANTLR 4.9.1
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
