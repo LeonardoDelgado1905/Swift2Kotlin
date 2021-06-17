@@ -1,4 +1,4 @@
-// Generated from C:/Users/carju/Desktop/LenguajesProgramacion/Swift2Kotlin/grammar\Swift3.g4 by ANTLR 4.9.1
+// Generated from /run/media/manjaroleo/74CA435ECA431C2C/RECOVER/Leonardo Delgado/U/Semestre VII/Lenguajes/Proyecto Final/Swift2Kotlin/grammar/Swift3.g4 by ANTLR 4.9.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -345,14 +345,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_top_level; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTop_level(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTop_level(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTop_level(this);
 			else return visitor.visitChildren(this);
@@ -423,14 +415,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitStatement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitStatement(this);
@@ -620,14 +604,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_statements; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterStatements(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitStatements(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitStatements(this);
 			else return visitor.visitChildren(this);
@@ -670,14 +646,6 @@ public class Swift3Parser extends Parser {
 			this.indexBefore = indexBefore;
 		}
 		@Override public int getRuleIndex() { return RULE_statements_impl; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterStatements_impl(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitStatements_impl(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitStatements_impl(this);
@@ -736,14 +704,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_loop_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterLoop_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitLoop_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitLoop_statement(this);
@@ -822,14 +782,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_for_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFor_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFor_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFor_statement(this);
@@ -959,14 +911,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_for_init; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFor_init(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFor_init(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFor_init(this);
 			else return visitor.visitChildren(this);
@@ -1024,14 +968,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_for_in_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFor_in_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFor_in_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFor_in_statement(this);
@@ -1101,14 +1037,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_while_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterWhile_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitWhile_statement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitWhile_statement(this);
 			else return visitor.visitChildren(this);
@@ -1155,14 +1083,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_condition_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCondition_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCondition_list(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCondition_list(this);
@@ -1225,14 +1145,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_condition; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCondition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCondition(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCondition(this);
@@ -1303,14 +1215,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_case_condition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCase_condition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCase_condition(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCase_condition(this);
 			else return visitor.visitChildren(this);
@@ -1364,14 +1268,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_optional_binding_condition; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterOptional_binding_condition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitOptional_binding_condition(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitOptional_binding_condition(this);
@@ -1435,14 +1331,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_repeat_while_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRepeat_while_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRepeat_while_statement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRepeat_while_statement(this);
 			else return visitor.visitChildren(this);
@@ -1490,14 +1378,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_branch_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterBranch_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitBranch_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitBranch_statement(this);
@@ -1563,14 +1443,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_if_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterIf_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitIf_statement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitIf_statement(this);
 			else return visitor.visitChildren(this);
@@ -1623,14 +1495,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_else_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterElse_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitElse_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitElse_clause(this);
@@ -1688,14 +1552,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_guard_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGuard_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGuard_statement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGuard_statement(this);
 			else return visitor.visitChildren(this);
@@ -1742,14 +1598,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_switch_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSwitch_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSwitch_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSwitch_statement(this);
@@ -1807,14 +1655,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_switch_cases; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSwitch_cases(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSwitch_cases(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSwitch_cases(this);
 			else return visitor.visitChildren(this);
@@ -1867,14 +1707,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_switch_case; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSwitch_case(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSwitch_case(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSwitch_case(this);
@@ -1932,14 +1764,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_case_label; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCase_label(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCase_label(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCase_label(this);
 			else return visitor.visitChildren(this);
@@ -1986,14 +1810,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_case_item_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCase_item_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCase_item_list(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCase_item_list(this);
@@ -2067,14 +1883,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_default_label; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDefault_label(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDefault_label(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDefault_label(this);
 			else return visitor.visitChildren(this);
@@ -2113,14 +1921,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_where_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterWhere_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitWhere_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitWhere_clause(this);
 			else return visitor.visitChildren(this);
@@ -2158,14 +1958,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_where_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterWhere_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitWhere_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitWhere_expression(this);
@@ -2214,14 +2006,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_labeled_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterLabeled_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitLabeled_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitLabeled_statement(this);
@@ -2295,14 +2079,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_statement_label; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterStatement_label(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitStatement_label(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitStatement_label(this);
 			else return visitor.visitChildren(this);
@@ -2340,14 +2116,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_label_name; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterLabel_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitLabel_name(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitLabel_name(this);
@@ -2396,14 +2164,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_control_transfer_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterControl_transfer_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitControl_transfer_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitControl_transfer_statement(this);
@@ -2477,14 +2237,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_break_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterBreak_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitBreak_statement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitBreak_statement(this);
 			else return visitor.visitChildren(this);
@@ -2531,14 +2283,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_continue_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterContinue_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitContinue_statement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitContinue_statement(this);
 			else return visitor.visitChildren(this);
@@ -2582,14 +2326,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_fallthrough_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFallthrough_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFallthrough_statement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFallthrough_statement(this);
 			else return visitor.visitChildren(this);
@@ -2625,14 +2361,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_return_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterReturn_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitReturn_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitReturn_statement(this);
@@ -2680,14 +2408,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_throw_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThrow_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThrow_statement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThrow_statement(this);
 			else return visitor.visitChildren(this);
@@ -2725,14 +2445,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_defer_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDefer_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDefer_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDefer_statement(this);
@@ -2774,14 +2486,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_do_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDo_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDo_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDo_statement(this);
@@ -2834,14 +2538,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_catch_clauses; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCatch_clauses(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCatch_clauses(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCatch_clauses(this);
 			else return visitor.visitChildren(this);
@@ -2893,14 +2589,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_catch_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCatch_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCatch_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCatch_clause(this);
@@ -2964,14 +2652,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_compiler_control_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCompiler_control_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCompiler_control_statement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCompiler_control_statement(this);
 			else return visitor.visitChildren(this);
@@ -3031,14 +2711,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_conditional_compilation_block; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterConditional_compilation_block(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitConditional_compilation_block(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitConditional_compilation_block(this);
@@ -3105,14 +2777,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_if_directive_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterIf_directive_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitIf_directive_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitIf_directive_clause(this);
 			else return visitor.visitChildren(this);
@@ -3163,14 +2827,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_elseif_directive_clauses; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterElseif_directive_clauses(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitElseif_directive_clauses(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitElseif_directive_clauses(this);
@@ -3227,14 +2883,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_elseif_directive_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterElseif_directive_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitElseif_directive_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitElseif_directive_clause(this);
 			else return visitor.visitChildren(this);
@@ -3286,14 +2934,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_else_directive_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterElse_directive_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitElse_directive_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitElse_directive_clause(this);
 			else return visitor.visitChildren(this);
@@ -3337,14 +2977,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_if_directive; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterIf_directive(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitIf_directive(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitIf_directive(this);
 			else return visitor.visitChildren(this);
@@ -3377,14 +3009,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_elseif_directive; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterElseif_directive(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitElseif_directive(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitElseif_directive(this);
@@ -3419,14 +3043,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_else_directive; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterElse_directive(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitElse_directive(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitElse_directive(this);
 			else return visitor.visitChildren(this);
@@ -3459,14 +3075,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_endif_directive; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterEndif_directive(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitEndif_directive(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitEndif_directive(this);
@@ -3524,14 +3132,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_compilation_condition; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCompilation_condition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCompilation_condition(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCompilation_condition(this);
@@ -3670,14 +3270,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_platform_condition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPlatform_condition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPlatform_condition(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPlatform_condition(this);
 			else return visitor.visitChildren(this);
@@ -3758,14 +3350,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_swift_version; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSwift_version(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSwift_version(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSwift_version(this);
 			else return visitor.visitChildren(this);
@@ -3806,14 +3390,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_operating_system; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterOperating_system(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitOperating_system(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitOperating_system(this);
 			else return visitor.visitChildren(this);
@@ -3849,14 +3425,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_architecture; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterArchitecture(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitArchitecture(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitArchitecture(this);
@@ -3903,14 +3471,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_line_control_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterLine_control_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitLine_control_statement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitLine_control_statement(this);
@@ -3983,14 +3543,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_line_number; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterLine_number(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitLine_number(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitLine_number(this);
 			else return visitor.visitChildren(this);
@@ -4024,14 +3576,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_file_name; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFile_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFile_name(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFile_name(this);
@@ -4070,14 +3614,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_availability_condition; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAvailability_condition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAvailability_condition(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAvailability_condition(this);
@@ -4127,14 +3663,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_availability_arguments; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAvailability_arguments(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAvailability_arguments(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAvailability_arguments(this);
@@ -4188,14 +3716,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_availability_argument; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAvailability_argument(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAvailability_argument(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAvailability_argument(this);
 			else return visitor.visitChildren(this);
@@ -4243,14 +3763,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_generic_parameter_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGeneric_parameter_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGeneric_parameter_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGeneric_parameter_clause(this);
 			else return visitor.visitChildren(this);
@@ -4297,14 +3809,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_generic_parameter_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGeneric_parameter_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGeneric_parameter_list(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGeneric_parameter_list(this);
@@ -4365,14 +3869,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_generic_parameter; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGeneric_parameter(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGeneric_parameter(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGeneric_parameter(this);
@@ -4438,14 +3934,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_generic_where_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGeneric_where_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGeneric_where_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGeneric_where_clause(this);
 			else return visitor.visitChildren(this);
@@ -4490,14 +3978,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_requirement_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRequirement_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRequirement_list(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRequirement_list(this);
@@ -4557,14 +4037,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_requirement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRequirement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRequirement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRequirement(this);
 			else return visitor.visitChildren(this);
@@ -4620,14 +4092,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_conformance_requirement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterConformance_requirement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitConformance_requirement(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitConformance_requirement(this);
@@ -4692,14 +4156,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_same_type_requirement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSame_type_requirement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSame_type_requirement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSame_type_requirement(this);
 			else return visitor.visitChildren(this);
@@ -4741,14 +4197,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_generic_argument_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGeneric_argument_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGeneric_argument_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGeneric_argument_clause(this);
@@ -4796,14 +4244,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_generic_argument_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGeneric_argument_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGeneric_argument_list(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGeneric_argument_list(this);
@@ -4857,14 +4297,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_generic_argument; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGeneric_argument(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGeneric_argument(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGeneric_argument(this);
@@ -4943,14 +4375,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDeclaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDeclaration(this);
@@ -5102,14 +4526,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_declarations; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDeclarations(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDeclarations(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDeclarations(this);
 			else return visitor.visitChildren(this);
@@ -5159,14 +4575,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_top_level_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTop_level_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTop_level_declaration(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTop_level_declaration(this);
 			else return visitor.visitChildren(this);
@@ -5212,14 +4620,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_code_block; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCode_block(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCode_block(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCode_block(this);
@@ -5274,14 +4674,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_import_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterImport_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitImport_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitImport_declaration(this);
@@ -5339,14 +4731,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_import_kind; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterImport_kind(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitImport_kind(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitImport_kind(this);
 			else return visitor.visitChildren(this);
@@ -5398,14 +4782,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_import_path; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterImport_path(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitImport_path(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitImport_path(this);
@@ -5464,14 +4840,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_import_path_identifier; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterImport_path_identifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitImport_path_identifier(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitImport_path_identifier(this);
@@ -5599,14 +4967,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_constant_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterConstant_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitConstant_declaration(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitConstant_declaration(this);
 			else return visitor.visitChildren(this);
@@ -5673,14 +5033,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_pattern_initializer_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPattern_initializer_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPattern_initializer_list(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPattern_initializer_list(this);
 			else return visitor.visitChildren(this);
@@ -5739,14 +5091,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_pattern_initializer; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPattern_initializer(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPattern_initializer(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPattern_initializer(this);
 			else return visitor.visitChildren(this);
@@ -5795,14 +5139,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_initializer; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterInitializer(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitInitializer(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitInitializer(this);
@@ -5868,14 +5204,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variable_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterVariable_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitVariable_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitVariable_declaration(this);
@@ -6011,14 +5339,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_variable_declaration_head; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterVariable_declaration_head(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitVariable_declaration_head(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitVariable_declaration_head(this);
 			else return visitor.visitChildren(this);
@@ -6076,14 +5396,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_variable_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterVariable_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitVariable_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitVariable_name(this);
 			else return visitor.visitChildren(this);
@@ -6124,14 +5436,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_getter_setter_block; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGetter_setter_block(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGetter_setter_block(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGetter_setter_block(this);
@@ -6209,14 +5513,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_getter_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGetter_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGetter_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGetter_clause(this);
 			else return visitor.visitChildren(this);
@@ -6284,14 +5580,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_setter_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSetter_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSetter_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSetter_clause(this);
@@ -6364,14 +5652,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_setter_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSetter_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSetter_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSetter_name(this);
 			else return visitor.visitChildren(this);
@@ -6416,14 +5696,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_getter_setter_keyword_block; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGetter_setter_keyword_block(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGetter_setter_keyword_block(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGetter_setter_keyword_block(this);
@@ -6498,14 +5770,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_getter_keyword_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterGetter_keyword_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitGetter_keyword_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitGetter_keyword_clause(this);
 			else return visitor.visitChildren(this);
@@ -6565,14 +5829,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_setter_keyword_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSetter_keyword_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSetter_keyword_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSetter_keyword_clause(this);
@@ -6635,14 +5891,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_willSet_didSet_block; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterWillSet_didSet_block(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitWillSet_didSet_block(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitWillSet_didSet_block(this);
@@ -6720,14 +5968,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_willSet_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterWillSet_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitWillSet_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitWillSet_clause(this);
 			else return visitor.visitChildren(this);
@@ -6792,14 +6032,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_didSet_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDidSet_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDidSet_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDidSet_clause(this);
@@ -6872,14 +6104,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_typealias_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTypealias_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTypealias_declaration(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTypealias_declaration(this);
 			else return visitor.visitChildren(this);
@@ -6951,14 +6175,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_typealias_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTypealias_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTypealias_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTypealias_name(this);
 			else return visitor.visitChildren(this);
@@ -6997,14 +6213,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typealias_assignment; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTypealias_assignment(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTypealias_assignment(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTypealias_assignment(this);
@@ -7058,14 +6266,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_function_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_declaration(this);
@@ -7141,14 +6341,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_function_head; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_head(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_head(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_head(this);
 			else return visitor.visitChildren(this);
@@ -7208,14 +6400,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_function_name; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_name(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_name(this);
@@ -7340,14 +6524,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_function_signature; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_signature(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_signature(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_signature(this);
 			else return visitor.visitChildren(this);
@@ -7435,14 +6611,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_function_result; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_result(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_result(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_result(this);
 			else return visitor.visitChildren(this);
@@ -7491,14 +6659,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_function_body; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_body(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_body(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_body(this);
 			else return visitor.visitChildren(this);
@@ -7536,14 +6696,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_parameter_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterParameter_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitParameter_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitParameter_clause(this);
@@ -7606,14 +6758,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_parameter_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterParameter_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitParameter_list(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitParameter_list(this);
@@ -7679,14 +6823,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_parameter; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterParameter(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitParameter(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitParameter(this);
@@ -7792,14 +6928,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_external_parameter_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExternal_parameter_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExternal_parameter_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExternal_parameter_name(this);
 			else return visitor.visitChildren(this);
@@ -7835,14 +6963,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_local_parameter_name; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterLocal_parameter_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitLocal_parameter_name(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitLocal_parameter_name(this);
@@ -7882,14 +7002,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_default_argument_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDefault_argument_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDefault_argument_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDefault_argument_clause(this);
@@ -7937,14 +7049,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enum_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterEnum_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitEnum_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitEnum_declaration(this);
@@ -8050,14 +7154,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_union_style_enum; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterUnion_style_enum(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitUnion_style_enum(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitUnion_style_enum(this);
 			else return visitor.visitChildren(this);
@@ -8154,14 +7250,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_union_style_enum_members; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterUnion_style_enum_members(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitUnion_style_enum_members(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitUnion_style_enum_members(this);
 			else return visitor.visitChildren(this);
@@ -8214,14 +7302,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_union_style_enum_member; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterUnion_style_enum_member(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitUnion_style_enum_member(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitUnion_style_enum_member(this);
@@ -8281,14 +7361,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_union_style_enum_case_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterUnion_style_enum_case_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitUnion_style_enum_case_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitUnion_style_enum_case_clause(this);
@@ -8353,14 +7425,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_union_style_enum_case_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterUnion_style_enum_case_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitUnion_style_enum_case_list(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitUnion_style_enum_case_list(this);
 			else return visitor.visitChildren(this);
@@ -8417,14 +7481,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_union_style_enum_case; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterUnion_style_enum_case(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitUnion_style_enum_case(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitUnion_style_enum_case(this);
 			else return visitor.visitChildren(this);
@@ -8472,14 +7528,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_enum_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterEnum_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitEnum_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitEnum_name(this);
 			else return visitor.visitChildren(this);
@@ -8515,14 +7563,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enum_case_name; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterEnum_case_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitEnum_case_name(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitEnum_case_name(this);
@@ -8573,14 +7613,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_raw_value_style_enum; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRaw_value_style_enum(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRaw_value_style_enum(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRaw_value_style_enum(this);
@@ -8652,14 +7684,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_raw_value_style_enum_members; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRaw_value_style_enum_members(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRaw_value_style_enum_members(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRaw_value_style_enum_members(this);
 			else return visitor.visitChildren(this);
@@ -8712,14 +7736,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_raw_value_style_enum_member; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRaw_value_style_enum_member(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRaw_value_style_enum_member(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRaw_value_style_enum_member(this);
@@ -8780,14 +7796,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_raw_value_style_enum_case_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRaw_value_style_enum_case_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRaw_value_style_enum_case_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRaw_value_style_enum_case_clause(this);
 			else return visitor.visitChildren(this);
@@ -8840,14 +7848,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_raw_value_style_enum_case_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRaw_value_style_enum_case_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRaw_value_style_enum_case_list(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRaw_value_style_enum_case_list(this);
@@ -8905,14 +7905,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_raw_value_style_enum_case; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRaw_value_style_enum_case(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRaw_value_style_enum_case(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRaw_value_style_enum_case(this);
 			else return visitor.visitChildren(this);
@@ -8962,14 +7954,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_raw_value_assignment; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRaw_value_assignment(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRaw_value_assignment(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRaw_value_assignment(this);
 			else return visitor.visitChildren(this);
@@ -9011,14 +7995,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_raw_value_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRaw_value_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRaw_value_literal(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRaw_value_literal(this);
@@ -9093,14 +8069,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_struct_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterStruct_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitStruct_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitStruct_declaration(this);
@@ -9193,14 +8161,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_struct_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterStruct_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitStruct_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitStruct_name(this);
 			else return visitor.visitChildren(this);
@@ -9241,14 +8201,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_struct_body; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterStruct_body(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitStruct_body(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitStruct_body(this);
@@ -9305,14 +8257,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_struct_member; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterStruct_member(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitStruct_member(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitStruct_member(this);
@@ -9421,14 +8365,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_class_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClass_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClass_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClass_declaration(this);
@@ -9610,14 +8546,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_class_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClass_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClass_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClass_name(this);
 			else return visitor.visitChildren(this);
@@ -9658,14 +8586,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_class_body; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClass_body(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClass_body(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClass_body(this);
@@ -9722,14 +8642,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_class_member; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClass_member(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClass_member(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClass_member(this);
@@ -9830,14 +8742,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_declaration(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_declaration(this);
 			else return visitor.visitChildren(this);
@@ -9909,14 +8813,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_name(this);
 			else return visitor.visitChildren(this);
@@ -9957,14 +8853,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_body; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_body(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_body(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_body(this);
@@ -10021,14 +8909,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_member; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_member(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_member(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_member(this);
@@ -10124,14 +9004,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_member_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_member_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_member_declaration(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_member_declaration(this);
 			else return visitor.visitChildren(this);
@@ -10218,14 +9090,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_property_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_property_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_property_declaration(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_property_declaration(this);
 			else return visitor.visitChildren(this);
@@ -10279,14 +9143,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_method_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_method_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_method_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_method_declaration(this);
@@ -10357,14 +9213,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_initializer_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_initializer_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_initializer_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_initializer_declaration(this);
@@ -10478,14 +9326,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_subscript_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_subscript_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_subscript_declaration(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_subscript_declaration(this);
 			else return visitor.visitChildren(this);
@@ -10537,14 +9377,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_associated_type_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_associated_type_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_associated_type_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_associated_type_declaration(this);
@@ -10636,14 +9468,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_initializer_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterInitializer_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitInitializer_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitInitializer_declaration(this);
@@ -10759,14 +9583,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_initializer_head; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterInitializer_head(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitInitializer_head(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitInitializer_head(this);
@@ -10889,14 +9705,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_initializer_body; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterInitializer_body(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitInitializer_body(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitInitializer_body(this);
 			else return visitor.visitChildren(this);
@@ -10935,14 +9743,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_deinitializer_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDeinitializer_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDeinitializer_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDeinitializer_declaration(this);
@@ -11007,14 +9807,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_extension_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExtension_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExtension_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExtension_declaration(this);
@@ -11131,14 +9923,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_extension_body; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExtension_body(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExtension_body(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExtension_body(this);
 			else return visitor.visitChildren(this);
@@ -11194,14 +9978,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_extension_member; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExtension_member(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExtension_member(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExtension_member(this);
@@ -11302,14 +10078,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_subscript_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSubscript_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSubscript_declaration(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSubscript_declaration(this);
 			else return visitor.visitChildren(this);
@@ -11384,14 +10152,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_subscript_head; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSubscript_head(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSubscript_head(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSubscript_head(this);
 			else return visitor.visitChildren(this);
@@ -11457,14 +10217,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_subscript_result; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSubscript_result(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSubscript_result(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSubscript_result(this);
 			else return visitor.visitChildren(this);
@@ -11518,14 +10270,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_operator_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterOperator_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitOperator_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitOperator_declaration(this);
@@ -11585,14 +10329,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_prefix_operator_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrefix_operator_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrefix_operator_declaration(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrefix_operator_declaration(this);
 			else return visitor.visitChildren(this);
@@ -11632,14 +10368,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_postfix_operator_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPostfix_operator_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPostfix_operator_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPostfix_operator_declaration(this);
@@ -11683,14 +10411,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_infix_operator_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterInfix_operator_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitInfix_operator_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitInfix_operator_declaration(this);
@@ -11743,14 +10463,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_infix_operator_group; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterInfix_operator_group(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitInfix_operator_group(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitInfix_operator_group(this);
 			else return visitor.visitChildren(this);
@@ -11796,14 +10508,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_precedence_group_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrecedence_group_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrecedence_group_declaration(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrecedence_group_declaration(this);
@@ -11868,14 +10572,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_precedence_group_attribute; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrecedence_group_attribute(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrecedence_group_attribute(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrecedence_group_attribute(this);
 			else return visitor.visitChildren(this);
@@ -11935,14 +10631,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_precedence_group_relation; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrecedence_group_relation(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrecedence_group_relation(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrecedence_group_relation(this);
@@ -12004,14 +10692,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_precedence_group_assignment; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrecedence_group_assignment(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrecedence_group_assignment(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrecedence_group_assignment(this);
 			else return visitor.visitChildren(this);
@@ -12053,14 +10733,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_precedence_group_associativity; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrecedence_group_associativity(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrecedence_group_associativity(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrecedence_group_associativity(this);
 			else return visitor.visitChildren(this);
@@ -12097,14 +10769,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_associativity_; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAssociativity_(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAssociativity_(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAssociativity_(this);
@@ -12157,14 +10821,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_precedence_group_names; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrecedence_group_names(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrecedence_group_names(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrecedence_group_names(this);
@@ -12219,14 +10875,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_precedence_group_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrecedence_group_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrecedence_group_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrecedence_group_name(this);
 			else return visitor.visitChildren(this);
@@ -12267,14 +10915,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaration_modifier; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDeclaration_modifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDeclaration_modifier(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDeclaration_modifier(this);
@@ -12452,14 +11092,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_declaration_modifiers; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDeclaration_modifiers(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDeclaration_modifiers(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDeclaration_modifiers(this);
 			else return visitor.visitChildren(this);
@@ -12507,14 +11139,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_access_level_modifier; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAccess_level_modifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAccess_level_modifier(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAccess_level_modifier(this);
@@ -12648,14 +11272,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_mutation_modifier; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterMutation_modifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitMutation_modifier(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitMutation_modifier(this);
 			else return visitor.visitChildren(this);
@@ -12727,14 +11343,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_pattern; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPattern(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPattern(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPattern(this);
@@ -12886,14 +11494,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_wildcard_pattern; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterWildcard_pattern(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitWildcard_pattern(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitWildcard_pattern(this);
 			else return visitor.visitChildren(this);
@@ -12930,14 +11530,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_identifier_pattern; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterIdentifier_pattern(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitIdentifier_pattern(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitIdentifier_pattern(this);
 			else return visitor.visitChildren(this);
@@ -12973,14 +11565,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_value_binding_pattern; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterValue_binding_pattern(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitValue_binding_pattern(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitValue_binding_pattern(this);
@@ -13039,14 +11623,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_tuple_pattern; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTuple_pattern(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTuple_pattern(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTuple_pattern(this);
 			else return visitor.visitChildren(this);
@@ -13102,14 +11678,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_tuple_pattern_element_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTuple_pattern_element_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTuple_pattern_element_list(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTuple_pattern_element_list(this);
 			else return visitor.visitChildren(this);
@@ -13163,14 +11731,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_tuple_pattern_element; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTuple_pattern_element(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTuple_pattern_element(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTuple_pattern_element(this);
 			else return visitor.visitChildren(this);
@@ -13213,14 +11773,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enum_case_pattern; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterEnum_case_pattern(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitEnum_case_pattern(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitEnum_case_pattern(this);
@@ -13282,14 +11834,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_optional_pattern; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterOptional_pattern(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitOptional_pattern(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitOptional_pattern(this);
 			else return visitor.visitChildren(this);
@@ -13327,14 +11871,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expression_pattern; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExpression_pattern(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExpression_pattern(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExpression_pattern(this);
@@ -13375,14 +11911,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_attribute; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAttribute(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAttribute(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAttribute(this);
@@ -13432,14 +11960,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_attribute_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAttribute_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAttribute_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAttribute_name(this);
 			else return visitor.visitChildren(this);
@@ -13477,14 +11997,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_attribute_argument_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAttribute_argument_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAttribute_argument_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAttribute_argument_clause(this);
@@ -13528,14 +12040,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_attributes; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAttributes(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAttributes(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAttributes(this);
@@ -13594,14 +12098,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_balanced_tokens; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterBalanced_tokens(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitBalanced_tokens(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitBalanced_tokens(this);
@@ -13672,14 +12168,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_balanced_token; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterBalanced_token(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitBalanced_token(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitBalanced_token(this);
@@ -13793,14 +12281,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_any_punctuation_for_balanced_token; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAny_punctuation_for_balanced_token(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAny_punctuation_for_balanced_token(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAny_punctuation_for_balanced_token(this);
 			else return visitor.visitChildren(this);
@@ -13883,14 +12363,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExpression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExpression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExpression(this);
 			else return visitor.visitChildren(this);
@@ -13954,14 +12426,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_expression_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExpression_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExpression_list(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExpression_list(this);
 			else return visitor.visitChildren(this);
@@ -14020,14 +12484,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_prefix_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrefix_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrefix_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrefix_expression(this);
@@ -14088,14 +12544,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_in_out_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterIn_out_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitIn_out_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitIn_out_expression(this);
 			else return visitor.visitChildren(this);
@@ -14132,14 +12580,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_try_operator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTry_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTry_operator(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTry_operator(this);
@@ -14215,14 +12655,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_binary_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterBinary_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitBinary_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitBinary_expression(this);
@@ -14316,14 +12748,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_binary_expressions; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterBinary_expressions(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitBinary_expressions(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitBinary_expressions(this);
 			else return visitor.visitChildren(this);
@@ -14384,14 +12808,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_conditional_operator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterConditional_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitConditional_operator(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitConditional_operator(this);
 			else return visitor.visitChildren(this);
@@ -14443,14 +12859,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_type_casting_operator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterType_casting_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitType_casting_operator(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitType_casting_operator(this);
@@ -14559,14 +12967,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_primary_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrimary_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrimary_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrimary_expression(this);
@@ -14696,14 +13096,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_literal_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterLiteral_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitLiteral_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitLiteral_expression(this);
 			else return visitor.visitChildren(this);
@@ -14797,14 +13189,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_array_literal; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterArray_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitArray_literal(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitArray_literal(this);
 			else return visitor.visitChildren(this);
@@ -14856,14 +13240,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_array_literal_items; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterArray_literal_items(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitArray_literal_items(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitArray_literal_items(this);
@@ -14929,14 +13305,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_array_literal_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterArray_literal_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitArray_literal_item(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitArray_literal_item(this);
 			else return visitor.visitChildren(this);
@@ -14975,14 +13343,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_dictionary_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDictionary_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDictionary_literal(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDictionary_literal(this);
@@ -15044,14 +13404,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_dictionary_literal_items; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDictionary_literal_items(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDictionary_literal_items(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDictionary_literal_items(this);
@@ -15121,14 +13473,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_dictionary_literal_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDictionary_literal_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDictionary_literal_item(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDictionary_literal_item(this);
 			else return visitor.visitChildren(this);
@@ -15181,14 +13525,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_playground_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPlayground_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPlayground_literal(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPlayground_literal(this);
@@ -15308,14 +13644,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_self_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSelf_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSelf_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSelf_expression(this);
 			else return visitor.visitChildren(this);
@@ -15428,14 +13756,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_superclass_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSuperclass_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSuperclass_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSuperclass_expression(this);
 			else return visitor.visitChildren(this);
@@ -15493,14 +13813,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_superclass_method_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSuperclass_method_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSuperclass_method_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSuperclass_method_expression(this);
 			else return visitor.visitChildren(this);
@@ -15543,14 +13855,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_superclass_subscript_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSuperclass_subscript_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSuperclass_subscript_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSuperclass_subscript_expression(this);
 			else return visitor.visitChildren(this);
@@ -15590,14 +13894,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_superclass_initializer_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSuperclass_initializer_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSuperclass_initializer_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSuperclass_initializer_expression(this);
@@ -15643,14 +13939,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_closure_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClosure_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClosure_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClosure_expression(this);
@@ -15715,14 +14003,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_closure_signature; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClosure_signature(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClosure_signature(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClosure_signature(this);
@@ -15813,14 +14093,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_closure_parameter_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClosure_parameter_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClosure_parameter_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClosure_parameter_clause(this);
 			else return visitor.visitChildren(this);
@@ -15890,14 +14162,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_closure_parameter_clause_identifier_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClosure_parameter_clause_identifier_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClosure_parameter_clause_identifier_list(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClosure_parameter_clause_identifier_list(this);
 			else return visitor.visitChildren(this);
@@ -15960,14 +14224,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_closure_parameter_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClosure_parameter_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClosure_parameter_list(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClosure_parameter_list(this);
 			else return visitor.visitChildren(this);
@@ -16026,14 +14282,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_closure_parameter; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClosure_parameter(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClosure_parameter(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClosure_parameter(this);
@@ -16099,14 +14347,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_closure_parameter_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClosure_parameter_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClosure_parameter_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClosure_parameter_name(this);
 			else return visitor.visitChildren(this);
@@ -16144,14 +14384,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_capture_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCapture_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCapture_list(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCapture_list(this);
@@ -16199,14 +14431,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_capture_list_items; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCapture_list_items(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCapture_list_items(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCapture_list_items(this);
@@ -16264,14 +14488,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_capture_list_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCapture_list_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCapture_list_item(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCapture_list_item(this);
 			else return visitor.visitChildren(this);
@@ -16314,14 +14530,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_capture_specifier; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCapture_specifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCapture_specifier(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCapture_specifier(this);
@@ -16369,14 +14577,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_implicit_member_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterImplicit_member_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitImplicit_member_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitImplicit_member_expression(this);
 			else return visitor.visitChildren(this);
@@ -16416,14 +14616,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_parenthesized_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterParenthesized_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitParenthesized_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitParenthesized_expression(this);
@@ -16473,14 +14665,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_tuple_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTuple_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTuple_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTuple_expression(this);
@@ -16558,14 +14742,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_tuple_element; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTuple_element(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTuple_element(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTuple_element(this);
 			else return visitor.visitChildren(this);
@@ -16617,14 +14793,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_wildcard_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterWildcard_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitWildcard_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitWildcard_expression(this);
 			else return visitor.visitChildren(this);
@@ -16662,14 +14830,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_selector_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSelector_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSelector_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSelector_expression(this);
@@ -16751,14 +14911,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_key_path_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterKey_path_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitKey_path_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitKey_path_expression(this);
 			else return visitor.visitChildren(this);
@@ -16815,14 +14967,6 @@ public class Swift3Parser extends Parser {
 		}
 		public Function_call_expression_with_closureContext(Postfix_expressionContext ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_call_expression_with_closure(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_call_expression_with_closure(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_call_expression_with_closure(this);
 			else return visitor.visitChildren(this);
@@ -16837,14 +14981,6 @@ public class Swift3Parser extends Parser {
 		}
 		public Function_call_expressionContext(Postfix_expressionContext ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_call_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_call_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_call_expression(this);
 			else return visitor.visitChildren(this);
@@ -16858,14 +14994,6 @@ public class Swift3Parser extends Parser {
 		public TerminalNode Pure_decimal_digits() { return getToken(Swift3Parser.Pure_decimal_digits, 0); }
 		public Explicit_member_expression1Context(Postfix_expressionContext ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExplicit_member_expression1(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExplicit_member_expression1(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExplicit_member_expression1(this);
 			else return visitor.visitChildren(this);
@@ -16878,14 +15006,6 @@ public class Swift3Parser extends Parser {
 		public TerminalNode DOT() { return getToken(Swift3Parser.DOT, 0); }
 		public Initializer_expressionContext(Postfix_expressionContext ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterInitializer_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitInitializer_expression(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitInitializer_expression(this);
 			else return visitor.visitChildren(this);
@@ -16897,14 +15017,6 @@ public class Swift3Parser extends Parser {
 		}
 		public TerminalNode DOT() { return getToken(Swift3Parser.DOT, 0); }
 		public Postfix_self_expressionContext(Postfix_expressionContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPostfix_self_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPostfix_self_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPostfix_self_expression(this);
@@ -16923,14 +15035,6 @@ public class Swift3Parser extends Parser {
 		public TerminalNode RPAREN() { return getToken(Swift3Parser.RPAREN, 0); }
 		public Initializer_expression_with_argsContext(Postfix_expressionContext ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterInitializer_expression_with_args(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitInitializer_expression_with_args(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitInitializer_expression_with_args(this);
 			else return visitor.visitChildren(this);
@@ -16941,14 +15045,6 @@ public class Swift3Parser extends Parser {
 			return getRuleContext(Dynamic_type_expressionContext.class,0);
 		}
 		public Dynamic_typeContext(Postfix_expressionContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDynamic_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDynamic_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDynamic_type(this);
@@ -16965,14 +15061,6 @@ public class Swift3Parser extends Parser {
 		}
 		public TerminalNode RBRACK() { return getToken(Swift3Parser.RBRACK, 0); }
 		public Subscript_expressionContext(Postfix_expressionContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSubscript_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSubscript_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSubscript_expression(this);
@@ -16991,14 +15079,6 @@ public class Swift3Parser extends Parser {
 			return getRuleContext(Generic_argument_clauseContext.class,0);
 		}
 		public Explicit_member_expression2Context(Postfix_expressionContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExplicit_member_expression2(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExplicit_member_expression2(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExplicit_member_expression2(this);
@@ -17020,14 +15100,6 @@ public class Swift3Parser extends Parser {
 		public TerminalNode RPAREN() { return getToken(Swift3Parser.RPAREN, 0); }
 		public Explicit_member_expression3Context(Postfix_expressionContext ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExplicit_member_expression3(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExplicit_member_expression3(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExplicit_member_expression3(this);
 			else return visitor.visitChildren(this);
@@ -17044,14 +15116,6 @@ public class Swift3Parser extends Parser {
 		public TerminalNode RPAREN() { return getToken(Swift3Parser.RPAREN, 0); }
 		public Explicit_member_expression4Context(Postfix_expressionContext ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterExplicit_member_expression4(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitExplicit_member_expression4(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitExplicit_member_expression4(this);
 			else return visitor.visitChildren(this);
@@ -17066,14 +15130,6 @@ public class Swift3Parser extends Parser {
 		}
 		public Postfix_operationContext(Postfix_expressionContext ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPostfix_operation(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPostfix_operation(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPostfix_operation(this);
 			else return visitor.visitChildren(this);
@@ -17084,14 +15140,6 @@ public class Swift3Parser extends Parser {
 			return getRuleContext(Primary_expressionContext.class,0);
 		}
 		public PrimaryContext(Postfix_expressionContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrimary(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrimary(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrimary(this);
@@ -17343,14 +15391,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_function_call_argument_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_call_argument_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_call_argument_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_call_argument_clause(this);
 			else return visitor.visitChildren(this);
@@ -17413,14 +15453,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_function_call_argument_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_call_argument_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_call_argument_list(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_call_argument_list(this);
 			else return visitor.visitChildren(this);
@@ -17480,14 +15512,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_function_call_argument; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_call_argument(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_call_argument(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_call_argument(this);
@@ -17560,14 +15584,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_trailing_closure; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTrailing_closure(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTrailing_closure(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTrailing_closure(this);
 			else return visitor.visitChildren(this);
@@ -17606,14 +15622,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_argument_names; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterArgument_names(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitArgument_names(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitArgument_names(this);
@@ -17667,14 +15675,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_argument_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterArgument_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitArgument_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitArgument_name(this);
 			else return visitor.visitChildren(this);
@@ -17715,14 +15715,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_dynamic_type_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDynamic_type_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDynamic_type_expression(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDynamic_type_expression(this);
@@ -17779,14 +15771,6 @@ public class Swift3Parser extends Parser {
 		public TerminalNode DOT() { return getToken(Swift3Parser.DOT, 0); }
 		public The_metatype_protocol_typeContext(Type_Context ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_metatype_protocol_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_metatype_protocol_type(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_metatype_protocol_type(this);
 			else return visitor.visitChildren(this);
@@ -17797,14 +15781,6 @@ public class Swift3Parser extends Parser {
 			return getRuleContext(Function_typeContext.class,0);
 		}
 		public The_function_typeContext(Type_Context ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_function_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_function_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_function_type(this);
@@ -17818,14 +15794,6 @@ public class Swift3Parser extends Parser {
 		public TerminalNode BANG() { return getToken(Swift3Parser.BANG, 0); }
 		public The_implicitly_unwrapped_optional_typeContext(Type_Context ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_implicitly_unwrapped_optional_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_implicitly_unwrapped_optional_type(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_implicitly_unwrapped_optional_type(this);
 			else return visitor.visitChildren(this);
@@ -17836,14 +15804,6 @@ public class Swift3Parser extends Parser {
 			return getRuleContext(Dictionary_typeContext.class,0);
 		}
 		public The_dictionary_typeContext(Type_Context ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_dictionary_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_dictionary_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_dictionary_type(this);
@@ -17857,14 +15817,6 @@ public class Swift3Parser extends Parser {
 		public TerminalNode QUESTION() { return getToken(Swift3Parser.QUESTION, 0); }
 		public The_optional_typeContext(Type_Context ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_optional_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_optional_type(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_optional_type(this);
 			else return visitor.visitChildren(this);
@@ -17876,14 +15828,6 @@ public class Swift3Parser extends Parser {
 		}
 		public The_tuple_typeContext(Type_Context ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_tuple_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_tuple_type(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_tuple_type(this);
 			else return visitor.visitChildren(this);
@@ -17891,14 +15835,6 @@ public class Swift3Parser extends Parser {
 	}
 	public static class The_self_typeContext extends Type_Context {
 		public The_self_typeContext(Type_Context ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_self_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_self_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_self_type(this);
@@ -17910,14 +15846,6 @@ public class Swift3Parser extends Parser {
 			return getRuleContext(Array_typeContext.class,0);
 		}
 		public The_array_typeContext(Type_Context ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_array_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_array_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_array_type(this);
@@ -17931,14 +15859,6 @@ public class Swift3Parser extends Parser {
 		public TerminalNode DOT() { return getToken(Swift3Parser.DOT, 0); }
 		public The_metatype_type_typeContext(Type_Context ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_metatype_type_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_metatype_type_type(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_metatype_type_type(this);
 			else return visitor.visitChildren(this);
@@ -17950,14 +15870,6 @@ public class Swift3Parser extends Parser {
 		}
 		public The_protocol_composition_typeContext(Type_Context ctx) { copyFrom(ctx); }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_protocol_composition_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_protocol_composition_type(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_protocol_composition_type(this);
 			else return visitor.visitChildren(this);
@@ -17965,14 +15877,6 @@ public class Swift3Parser extends Parser {
 	}
 	public static class The_any_typeContext extends Type_Context {
 		public The_any_typeContext(Type_Context ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_any_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_any_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_any_type(this);
@@ -17984,14 +15888,6 @@ public class Swift3Parser extends Parser {
 			return getRuleContext(Type_identifierContext.class,0);
 		}
 		public The_type_identifierContext(Type_Context ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterThe_type_identifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitThe_type_identifier(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitThe_type_identifier(this);
@@ -18180,14 +16076,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_type_annotation; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterType_annotation(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitType_annotation(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitType_annotation(this);
 			else return visitor.visitChildren(this);
@@ -18254,14 +16142,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_type_identifier; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterType_identifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitType_identifier(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitType_identifier(this);
 			else return visitor.visitChildren(this);
@@ -18320,14 +16200,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_type_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterType_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitType_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitType_name(this);
 			else return visitor.visitChildren(this);
@@ -18365,14 +16237,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_tuple_type; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTuple_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTuple_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTuple_type(this);
@@ -18426,14 +16290,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_tuple_type_element_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTuple_type_element_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTuple_type_element_list(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTuple_type_element_list(this);
@@ -18494,14 +16350,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_tuple_type_element; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterTuple_type_element(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitTuple_type_element(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitTuple_type_element(this);
 			else return visitor.visitChildren(this);
@@ -18553,14 +16401,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_element_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterElement_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitElement_name(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitElement_name(this);
 			else return visitor.visitChildren(this);
@@ -18605,14 +16445,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_function_type; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_type(this);
@@ -18709,14 +16541,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_function_type_argument_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_type_argument_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_type_argument_clause(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_type_argument_clause(this);
 			else return visitor.visitChildren(this);
@@ -18786,14 +16610,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_function_type_argument_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_type_argument_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_type_argument_list(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_type_argument_list(this);
 			else return visitor.visitChildren(this);
@@ -18855,14 +16671,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_function_type_argument; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterFunction_type_argument(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitFunction_type_argument(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitFunction_type_argument(this);
@@ -18936,14 +16744,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_argument_label; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterArgument_label(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitArgument_label(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitArgument_label(this);
 			else return visitor.visitChildren(this);
@@ -18981,14 +16781,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_array_type; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterArray_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitArray_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitArray_type(this);
@@ -19035,14 +16827,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_dictionary_type; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDictionary_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDictionary_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDictionary_type(this);
@@ -19094,14 +16878,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_composition_type; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_composition_type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_composition_type(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_composition_type(this);
@@ -19162,14 +16938,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_protocol_identifier; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterProtocol_identifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitProtocol_identifier(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitProtocol_identifier(this);
 			else return visitor.visitChildren(this);
@@ -19210,14 +16978,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_type_inheritance_clause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterType_inheritance_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitType_inheritance_clause(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitType_inheritance_clause(this);
@@ -19289,14 +17049,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_type_inheritance_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterType_inheritance_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitType_inheritance_list(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitType_inheritance_list(this);
 			else return visitor.visitChildren(this);
@@ -19347,14 +17099,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_class_requirement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterClass_requirement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitClass_requirement(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitClass_requirement(this);
 			else return visitor.visitChildren(this);
@@ -19391,14 +17135,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaration_identifier; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDeclaration_identifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDeclaration_identifier(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDeclaration_identifier(this);
@@ -19504,14 +17240,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_label_identifier; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterLabel_identifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitLabel_identifier(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitLabel_identifier(this);
@@ -19664,14 +17392,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_keyword_as_identifier_in_declarations; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterKeyword_as_identifier_in_declarations(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitKeyword_as_identifier_in_declarations(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitKeyword_as_identifier_in_declarations(this);
 			else return visitor.visitChildren(this);
@@ -19713,14 +17433,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_keyword_as_identifier_in_labels; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterKeyword_as_identifier_in_labels(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitKeyword_as_identifier_in_labels(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitKeyword_as_identifier_in_labels(this);
@@ -19765,14 +17477,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_assignment_operator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterAssignment_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitAssignment_operator(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitAssignment_operator(this);
 			else return visitor.visitChildren(this);
@@ -19808,14 +17512,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_negate_prefix_operator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterNegate_prefix_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitNegate_prefix_operator(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitNegate_prefix_operator(this);
@@ -19855,14 +17551,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_compilation_condition_AND; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCompilation_condition_AND(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCompilation_condition_AND(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCompilation_condition_AND(this);
@@ -19905,14 +17593,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_compilation_condition_OR; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCompilation_condition_OR(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCompilation_condition_OR(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCompilation_condition_OR(this);
 			else return visitor.visitChildren(this);
@@ -19952,14 +17632,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_compilation_condition_GE; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterCompilation_condition_GE(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitCompilation_condition_GE(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitCompilation_condition_GE(this);
 			else return visitor.visitChildren(this);
@@ -19998,14 +17670,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_arrow_operator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterArrow_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitArrow_operator(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitArrow_operator(this);
@@ -20047,14 +17711,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_range_operator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterRange_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitRange_operator(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitRange_operator(this);
@@ -20099,14 +17755,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_same_type_equals; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterSame_type_equals(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitSame_type_equals(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitSame_type_equals(this);
 			else return visitor.visitChildren(this);
@@ -20147,14 +17795,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_binary_operator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterBinary_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitBinary_operator(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitBinary_operator(this);
 			else return visitor.visitChildren(this);
@@ -20193,14 +17833,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_prefix_operator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPrefix_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPrefix_operator(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPrefix_operator(this);
 			else return visitor.visitChildren(this);
@@ -20238,14 +17870,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_postfix_operator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterPostfix_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitPostfix_operator(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitPostfix_operator(this);
@@ -20299,14 +17923,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_operator_; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterOperator_(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitOperator_(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitOperator_(this);
@@ -20411,14 +18027,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_operator_character; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterOperator_character(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitOperator_character(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitOperator_character(this);
 			else return visitor.visitChildren(this);
@@ -20496,14 +18104,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_operator_head; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterOperator_head(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitOperator_head(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitOperator_head(this);
 			else return visitor.visitChildren(this);
@@ -20575,14 +18175,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_dot_operator_head; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDot_operator_head(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDot_operator_head(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDot_operator_head(this);
 			else return visitor.visitChildren(this);
@@ -20619,14 +18211,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_dot_operator_character; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterDot_operator_character(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitDot_operator_character(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitDot_operator_character(this);
@@ -20703,14 +18287,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_literal; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterLiteral(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitLiteral(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitLiteral(this);
 			else return visitor.visitChildren(this);
@@ -20778,14 +18354,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_numeric_literal; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterNumeric_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitNumeric_literal(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitNumeric_literal(this);
 			else return visitor.visitChildren(this);
@@ -20852,14 +18420,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_boolean_literal; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterBoolean_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitBoolean_literal(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitBoolean_literal(this);
 			else return visitor.visitChildren(this);
@@ -20902,14 +18462,6 @@ public class Swift3Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_nil_literal; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterNil_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitNil_literal(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitNil_literal(this);
 			else return visitor.visitChildren(this);
@@ -20947,14 +18499,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_integer_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterInteger_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitInteger_literal(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitInteger_literal(this);
@@ -20999,14 +18543,6 @@ public class Swift3Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_string_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).enterString_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Swift3Listener ) ((Swift3Listener)listener).exitString_literal(this);
-		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Swift3Visitor ) return ((Swift3Visitor<? extends T>)visitor).visitString_literal(this);

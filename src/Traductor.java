@@ -1,3 +1,4 @@
+
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 
@@ -8,7 +9,7 @@ public class Traductor {
         Swift3Parser parser = new Swift3Parser(tokens);
         ParseTree tree = parser.top_level();
 
-        //MyVisitor<Object> loader = new MyVisitor<Object>();
-        //loader.visit(tree);
+        MyVisitor<Object> loader = new MyVisitor<Object>();
+        loader.visit(tree);
     }
 }
