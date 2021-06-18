@@ -1,10 +1,18 @@
 let someCharacter: Character = "z"
-switch someCharacter {
-case "a":
-    print("The first letter of the alphabet")
-case "z":
-    print("The last letter of the alphabet")
+
+
+switch 999 {
+case ..<0:
+    naturalCount = "no"
+case 1..<5:
+    naturalCount = "a few"
+case 5..<12:
+    naturalCount = "several"
+case 12..<100:
+    naturalCount = "dozens of"
+case 100...1000:
+    naturalCount = "hundreds of"
 default:
-    print("Some other character")
+    naturalCount = "many"
 }
 // Prints "The last letter of the alphabet"
