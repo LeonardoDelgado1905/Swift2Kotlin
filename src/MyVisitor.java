@@ -12,6 +12,10 @@ public class MyVisitor<T> extends Swift3BaseVisitor<T> {
         return s.indexOf("..") != -1;
     }
 
+    @Override
+    public T visitExpression(Swift3Parser.ExpressionContext ctx) {
+        return super.visitExpression(ctx);
+    }
 
     @Override
     public T visitSwitch_statement(Swift3Parser.Switch_statementContext ctx) {
