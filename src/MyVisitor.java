@@ -1,3 +1,4 @@
+/*
 public class MyVisitor<T> extends Swift3BaseVisitor<T> {
 
     int nested_level = 0;
@@ -136,3 +137,4 @@ public class MyVisitor<T> extends Swift3BaseVisitor<T> {
         return super.visitControl_transfer_statement(ctx);
     }
 }
+*/

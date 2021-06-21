@@ -3,12 +3,13 @@ import org.antlr.v4.runtime.tree.*;
 
 public class Traductor {
     public static void main(String [] args) throws Exception{
-        Swift3Lexer lexer = new Swift3Lexer(CharStreams.fromFileName("input/input.txt"));
+        KotlinLexer lexer = new KotlinLexer(CharStreams.fromFileName("input/input.txt"));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
-        Swift3Parser parser = new Swift3Parser(tokens);
-        ParseTree tree = parser.top_level();
+        KotlinParser parser = new KotlinParser(tokens);
+        ParseTree tree = parser.expression();
 
-        MyVisitor<Object> loader = new MyVisitor<Object>();
+        VisitorKotlin<Object> loader = new VisitorKotlin<Object>();
         loader.visit(tree);
+
     }
 }

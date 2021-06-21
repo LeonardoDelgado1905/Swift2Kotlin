@@ -1,4 +1,4 @@
-// Generated from C:/Users/carju/Desktop/LenguajesProgramacion/Swift2Kotlin/grammar\KotlinLexer.g4 by ANTLR 4.9.1
+// Generated from R:/Documentos/Unal/7mo Semestre/Lng/ANTLR/SwiftKotlin/Swift2Kotlin/grammar\KotlinLexer.g4 by ANTLR 4.9.1
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;

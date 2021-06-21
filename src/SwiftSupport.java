@@ -1,3 +1,4 @@
+/*
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.TokenStream;
@@ -6,16 +7,19 @@ import org.antlr.v4.runtime.misc.Interval;
 import java.util.BitSet;
 
 public class SwiftSupport {
-    /* TODO
+    */
+/* TODO
     There is one caveat to the rules above. If the ! or ? predefined operator
      has no whitespace on the left, it is treated as a postfix operator,
      regardless of whether it has whitespace on the right. To use the ? as
      the optional-chaining operator, it must not have whitespace on the left.
       To use it in the ternary conditional (? :) operator, it must have
       whitespace around both sides.
-    */
+    *//*
 
-    /*
+
+    */
+/*
     operator-head : /  =  -  +  !  *  %  <  >  &  |  ^  ~  ?
       | [\u00A1-\u00A7]
       | [\u00A9\u00AB]
@@ -32,7 +36,8 @@ public class SwiftSupport {
       | [\u3001-\u3003]
       | [\u3008-\u3030]
       ;
-     */
+     *//*
+
     public static final BitSet operatorHead = new BitSet(0x10000);
     public static final BitSet operatorCharacter;
 
@@ -180,7 +185,9 @@ public class SwiftSupport {
         return true;
     }
 
-    /** Find stop token index of next operator; return -1 if not operator. */
+    */
+/** Find stop token index of next operator; return -1 if not operator. *//*
+
     public static int getLastOpTokenIndex(TokenStream tokens) {
         int currentTokenIndex = tokens.index(); // current on-channel lookahead token index
         Token currentToken = tokens.get(currentTokenIndex);
@@ -227,11 +234,13 @@ public class SwiftSupport {
         }
     }
 
-    /**
+    */
+/**
      "If an operator has whitespace around both sides or around neither side,
      it is treated as a binary operator. As an example, the + operator in a+b
      and a + b is treated as a binary operator."
-     */
+     *//*
+
     public static boolean isBinaryOp(TokenStream tokens) {
         int stop = getLastOpTokenIndex(tokens);
         if ( stop==-1 ) return false;
@@ -247,11 +256,13 @@ public class SwiftSupport {
         return result;
     }
 
-    /**
+    */
+/**
      "If an operator has whitespace on the left side only, it is treated as a
      prefix unary operator. As an example, the ++ operator in a ++b is treated
      as a prefix unary operator."
-     */
+     *//*
+
     public static boolean isPrefixOp(TokenStream tokens) {
         int stop = getLastOpTokenIndex(tokens);
         if ( stop==-1 ) return false;
@@ -267,7 +278,8 @@ public class SwiftSupport {
         return result;
     }
 
-    /**
+    */
+/**
      "If an operator has whitespace on the right side only, it is treated as a
      postfix unary operator. As an example, the ++ operator in a++ b is treated
      as a postfix unary operator."
@@ -275,7 +287,8 @@ public class SwiftSupport {
      by a dot (.), it is treated as a postfix unary operator. As an example,
      the ++ operator in a++.b is treated as a postfix unary operator (a++ .b
      rather than a ++ .b)."
-     */
+     *//*
+
     public static boolean isPostfixOp(TokenStream tokens) {
         int stop = getLastOpTokenIndex(tokens);
         if ( stop==-1 ) return false;
@@ -346,4 +359,4 @@ public class SwiftSupport {
             return true;
         }
     }
-}
+}*/
