@@ -17,10 +17,19 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$USER_HOME$/ANTLR/antlr-4.9.2-complete.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Antlr/antlr-4.9.2-complete.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
