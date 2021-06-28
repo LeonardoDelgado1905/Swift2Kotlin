@@ -80,5 +80,11 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         System.out.print(ctx.getText());
         return null;
     }
+
+    @Override
+    public T visitAssignmentAndOperator(KotlinParser.AssignmentAndOperatorContext ctx) {
+        System.out.print(ctx.getText());
+        return null;
+    }
 }
 
