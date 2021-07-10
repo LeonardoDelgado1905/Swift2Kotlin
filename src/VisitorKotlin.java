@@ -44,7 +44,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
             visitJumpExpression(ctx.primaryExpression().jumpExpression());
         }
         else{
-            System.out.println(ctx.getText());
+            System.out.print(ctx.getText());
             //return super.visitPostfixUnaryExpression(ctx);
         }
         return null;
@@ -223,6 +223,35 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         if(ctx.block() !=  null){
             visitBlock(ctx.block());
         }
+        return null;
+    }
+
+    @Override
+    public T visitAssignment(KotlinParser.AssignmentContext ctx) {
+
+        if(ctx.directlyAssignableExpression() != null){
+            visitDirectlyAssignableExpression(ctx.directlyAssignableExpression());
+            System.out.print(" = ");
+            visitExpression(ctx.expression());
+        } else{
+            visitAssignableExpression(ctx.assignableExpression());
+            visitAssignmentAndOperator(ctx.assignmentAndOperator());
+            visitExpression(ctx.expression());
+        }
+        System.out.println();
+        return null;
+    }
+
+    @Override
+    public T visitDirectlyAssignableExpression(KotlinParser.DirectlyAssignableExpressionContext ctx) {
+        visitSimpleIdentifier(ctx.simpleIdentifier());
+        return null;
+    }
+
+
+    @Override
+    public T visitSimpleIdentifier(KotlinParser.SimpleIdentifierContext ctx) {
+        System.out.print(ctx.getText());
         return null;
     }
 }
