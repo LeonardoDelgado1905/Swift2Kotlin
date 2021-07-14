@@ -1,15 +1,9 @@
 {
-
-s = (3*7)
-var ṕ: Int
-var j = [1, 2, 3, 4]
-p += j[3]
-
-
-val x = 5
-var y: String = "hola"
-final val y: Double get(){
-        var z = y+3
-        return z
+when (x) {
+    1 -> print("x == 1")
+    2 -> print("x == 2")
+    else -> { // Note the block
+        print("x is neither 1 nor 2")
     }
+}
 }
