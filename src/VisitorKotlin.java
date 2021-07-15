@@ -1,3 +1,7 @@
+import org.antlr.v4.runtime.tree.TerminalNode;
+
+import java.util.List;
+
 public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
 
@@ -6,6 +10,12 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
     void print_tabs(){
         for(int i = 0; i < nested_level; ++i){
             System.out.print("\t");
+        }
+    }
+
+    void printNL(List<TerminalNode> list){
+        for (TerminalNode terminalNode : list) {
+            System.out.print(terminalNode.getText());
         }
     }
 
@@ -228,16 +238,15 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     @Override
     public T visitAssignment(KotlinParser.AssignmentContext ctx) {
-
+        print_tabs();
         if(ctx.directlyAssignableExpression() != null){
             visitDirectlyAssignableExpression(ctx.directlyAssignableExpression());
             System.out.print(" = ");
-            visitExpression(ctx.expression());
         } else{
             visitAssignableExpression(ctx.assignableExpression());
             visitAssignmentAndOperator(ctx.assignmentAndOperator());
-            visitExpression(ctx.expression());
         }
+        visitExpression(ctx.expression());
         System.out.println();
         return null;
     }
@@ -252,6 +261,36 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
     @Override
     public T visitSimpleIdentifier(KotlinParser.SimpleIdentifierContext ctx) {
         System.out.print(ctx.getText());
+        return null;
+    }
+
+    @Override
+    public T visitControlStructureBody(KotlinParser.ControlStructureBodyContext ctx) {
+        return super.visitControlStructureBody(ctx);
+    }
+
+    @Override
+    public T visitIfExpression(KotlinParser.IfExpressionContext ctx) {
+        System.out.print("if");
+        //printNL(ctx.NL());
+        System.out.print("(");
+        //printNL(ctx.NL());
+        visitExpression(ctx.expression());
+        //printNL(ctx.NL());
+        if(ctx.controlStructureBody(0) != null){
+            nested_level++;
+            visitControlStructureBody(ctx.controlStructureBody(0));
+            if(ctx.controlStructureBody(1) != null){
+                System.out.print("else");
+                nested_level++;
+                visitControlStructureBody(ctx.controlStructureBody(1));
+            }
+        }else{
+            System.out.print("else");
+            nested_level++;
+            visitControlStructureBody(ctx.controlStructureBody(0));
+        }
+
         return null;
     }
 }
