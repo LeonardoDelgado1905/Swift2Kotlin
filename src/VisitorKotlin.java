@@ -53,6 +53,9 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     @Override
     public T visitPrimaryExpression(KotlinParser.PrimaryExpressionContext ctx) {
+        if(ctx.literalConstant() == null && ctx.stringLiteral() == null && ctx.thisExpression() == null){
+            print_tabs();
+        }
         if (ctx.literalConstant() != null ||
                 ctx.stringLiteral() != null ||
                 ctx.simpleIdentifier() != null ||
@@ -62,7 +65,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
                 ctx.collectionLiteral() != null ||
                 ctx.thisExpression() != null ||
                 ctx.superExpression() != null) {
-            System.out.println(ctx.getText());
+            System.out.print(ctx.getText());
         } else if (ctx.parenthesizedExpression() != null) {
             visitParenthesizedExpression(ctx.parenthesizedExpression());
         } else if (ctx.ifExpression() != null) {
@@ -81,9 +84,9 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     @Override
     public T visitParenthesizedExpression(KotlinParser.ParenthesizedExpressionContext ctx) {
-        System.out.print("( ");
+        System.out.print("(");
         visitExpression(ctx.expression());
-        System.out.println(" )");
+        System.out.println(")");
         return null;
     }
 
@@ -160,7 +163,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         }
         if (ctx.expression() != null) {
             visitExpression(ctx.expression());
-            System.out.println();
+            //System.out.println();
         }
         return null;
     }
@@ -228,6 +231,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     @Override
     public T visitPropertyDeclaration(KotlinParser.PropertyDeclarationContext ctx) {
+        print_tabs();
         if (ctx.modifiers() != null) {
             System.out.print(ctx.modifiers().getText() + " ");
         }
@@ -321,10 +325,10 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     @Override
     public T visitAssignment(KotlinParser.AssignmentContext ctx) {
+        print_tabs();
         if (ctx.directlyAssignableExpression() != null) {
             visitDirectlyAssignableExpression(ctx.directlyAssignableExpression());
             System.out.print(" = ");
-            visitExpression(ctx.expression());
         } else {
             visitAssignableExpression(ctx.assignableExpression());
             visitAssignmentAndOperator(ctx.assignmentAndOperator());
@@ -355,24 +359,26 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
     @Override
     public T visitIfExpression(KotlinParser.IfExpressionContext ctx) {
         System.out.print("if");
-        //printNL(ctx.NL());
         System.out.print("(");
-        //printNL(ctx.NL());
         visitExpression(ctx.expression());
-        //printNL(ctx.NL());
+        System.out.println("){");
         if(ctx.controlStructureBody(0) != null){
             nested_level++;
             visitControlStructureBody(ctx.controlStructureBody(0));
+            nested_level--;
             if(ctx.controlStructureBody(1) != null){
-                System.out.print("else");
+                System.out.println("}else{");
                 nested_level++;
                 visitControlStructureBody(ctx.controlStructureBody(1));
+                nested_level--;
             }
         }else{
             System.out.print("else");
             nested_level++;
             visitControlStructureBody(ctx.controlStructureBody(0));
+            nested_level--;
         }
+        System.out.println("}");
 
         return null;
     }

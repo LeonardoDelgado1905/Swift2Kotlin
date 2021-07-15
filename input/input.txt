@@ -1,11 +1,13 @@
 {
-<<<<<<< HEAD
+
 
 if(a>b){
     a = 3
 }else{
     a = 5
 }
+
+if(a>b); else print("a")
 
 s = (3*7)
 var p: Int
@@ -18,14 +20,4 @@ final val y: Double get(){
         var z = y+3
         return z
     }
-
-=======
-when (x) {
-    1 -> print("x == 1")
-    2 -> print("x == 2")
-    else -> { // Note the block
-        print("x is neither 1 nor 2")
-    }
-}
->>>>>>> de386421106acf4d5c4e0bd0664d333daf8f652b
 }

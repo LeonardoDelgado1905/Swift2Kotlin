@@ -181,11 +181,6 @@ propertyDeclaration
     (NL* typeConstraints)?
     (NL* ('=' NL* expression | propertyDelegate))?
     (NL+ ';')? NL* (getter? (NL* semi? setter)? | setter? (NL* semi? getter)?)
-    /*
-        XXX: actually, it's not that simple. You can put semi only on the same line as getter, but any other semicolons
-        between property and getter are forbidden
-        Is this a bug in kotlin parser? Who knows.
-    */
     ;
 
 multiVariableDeclaration
