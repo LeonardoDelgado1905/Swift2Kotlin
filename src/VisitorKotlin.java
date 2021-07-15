@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import org.antlr.v4.runtime.tree.TerminalNode;
-
 import java.util.List;
 
 public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
-=======
-public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
->>>>>>> de386421106acf4d5c4e0bd0664d333daf8f652b
 
 
     int nested_level = 0;
@@ -14,12 +8,6 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
     void print_tabs() {
         for (int i = 0; i < nested_level; ++i) {
             System.out.print("\t");
-        }
-    }
-
-    void printNL(List<TerminalNode> list){
-        for (TerminalNode terminalNode : list) {
-            System.out.print(terminalNode.getText());
         }
     }
 
@@ -333,20 +321,11 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
 
     @Override
     public T visitAssignment(KotlinParser.AssignmentContext ctx) {
-<<<<<<< HEAD
-        print_tabs();
-        if(ctx.directlyAssignableExpression() != null){
-            visitDirectlyAssignableExpression(ctx.directlyAssignableExpression());
-            System.out.print(" = ");
-        } else{
-=======
-
         if (ctx.directlyAssignableExpression() != null) {
             visitDirectlyAssignableExpression(ctx.directlyAssignableExpression());
             System.out.print(" = ");
             visitExpression(ctx.expression());
         } else {
->>>>>>> de386421106acf4d5c4e0bd0664d333daf8f652b
             visitAssignableExpression(ctx.assignableExpression());
             visitAssignmentAndOperator(ctx.assignmentAndOperator());
         }
@@ -367,8 +346,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
         System.out.print(ctx.getText());
         return null;
     }
-
-<<<<<<< HEAD
+    
     @Override
     public T visitControlStructureBody(KotlinParser.ControlStructureBodyContext ctx) {
         return super.visitControlStructureBody(ctx);
@@ -398,7 +376,5 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
 
         return null;
     }
-=======
->>>>>>> de386421106acf4d5c4e0bd0664d333daf8f652b
 }
 
