@@ -1,6 +1,4 @@
 {
-
-
 if(a>b){
     a = 3
 }else{
@@ -20,4 +18,8 @@ final val y: Double get(){
         var z = y+3
         return z
     }
+
+while (x > 0) {
+    x--
+}
 }
