@@ -1,9 +1,14 @@
 {
-
 do {
     factorial *= number
     number--
 }while(number > 0)
+
+if(a>b){
+    a = 3
+}else{
+    a = 5
+}
 
 if(a>b); else print("a")
 
@@ -18,4 +23,8 @@ final val y: Double get(){
         var z = y+3
         return z
     }
+
+while (x > 0) {
+    x--
+}
 }

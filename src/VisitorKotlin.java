@@ -169,6 +169,22 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
     }
 
     @Override
+    public T visitWhileStatement(KotlinParser.WhileStatementContext ctx) {
+        System.out.print("while ");
+        visitExpression(ctx.expression());
+        if(ctx.controlStructureBody() != null){
+            System.out.println(" {");
+            visitControlStructureBody(ctx.controlStructureBody());
+            System.out.println();
+            System.out.println("}");
+        }else{
+
+            System.out.println(";");
+        }
+        return null;
+    }
+
+    @Override
     public T visitAdditiveOperator(KotlinParser.AdditiveOperatorContext ctx) {
         System.out.print(ctx.getText());
         return null;
