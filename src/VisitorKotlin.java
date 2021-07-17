@@ -228,7 +228,6 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         return null;
     }
 
-
     @Override
     public T visitPropertyDeclaration(KotlinParser.PropertyDeclarationContext ctx) {
         print_tabs();
@@ -325,7 +324,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     @Override
     public T visitAssignment(KotlinParser.AssignmentContext ctx) {
-        print_tabs();
+        //print_tabs();
         if (ctx.directlyAssignableExpression() != null) {
             visitDirectlyAssignableExpression(ctx.directlyAssignableExpression());
             System.out.print(" = ");
@@ -380,6 +379,19 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         }
         System.out.println("}");
 
+        return null;
+    }
+
+    @Override
+    public T visitDoWhileStatement(KotlinParser.DoWhileStatementContext ctx) {
+        System.out.println("repeat{");
+        nested_level++;
+        visitControlStructureBody(ctx.controlStructureBody());
+        nested_level--;
+        System.out.println();
+        System.out.print("}while ");
+        visitExpression(ctx.expression());
+        System.out.println();
         return null;
     }
 }

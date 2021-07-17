@@ -1,11 +1,9 @@
 {
 
-
-if(a>b){
-    a = 3
-}else{
-    a = 5
-}
+do {
+    factorial *= number
+    number--
+}while(number > 0)
 
 if(a>b); else print("a")
 
