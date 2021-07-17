@@ -27,4 +27,7 @@ final val y: Double get(){
 while (x > 0) {
     x--
 }
+
+
+for (item in collection) print(item)
 }
