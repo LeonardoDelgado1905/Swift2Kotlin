@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
 
@@ -43,12 +41,13 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
     @Override
     public T visitPostfixUnaryExpression(KotlinParser.PostfixUnaryExpressionContext ctx) {
 
-        if(ctx.primaryExpression().simpleIdentifier() != null && ctx.primaryExpression().simpleIdentifier().getText().equals("print")){
+        if(ctx.primaryExpression().simpleIdentifier() != null && (ctx.primaryExpression().simpleIdentifier().getText().equals("print") || ctx.getText().contains("--") || ctx.getText().contains("++"))){
             print_tabs();
             visitPrimaryExpression(ctx.primaryExpression());
-            System.out.println(ctx.postfixUnarySuffix(0).getText());
-        }
-        else{
+            if (ctx.postfixUnarySuffix() != null) {
+                System.out.println(ctx.postfixUnarySuffix(0).getText());
+            }
+        }else{
             visitPrimaryExpression(ctx.primaryExpression());
             if (ctx.postfixUnarySuffix() != null) {
                 for (int i = 0; i < ctx.postfixUnarySuffix().size(); i++) {
@@ -186,12 +185,10 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
             System.out.println(" {");
             nested_level++;
             visitControlStructureBody(ctx.controlStructureBody());
-            System.out.println();
             nested_level--;
             print_tabs();
             System.out.println("}");
         }else{
-
             System.out.println(";");
         }
         return null;
@@ -294,6 +291,8 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
             nested_level++;
             visitGetter(ctx.getter());
             if (!hasSetter) {
+                nested_level--;
+                print_tabs();
                 System.out.println("}");
             }
         }
@@ -416,7 +415,6 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         nested_level++;
         visitControlStructureBody(ctx.controlStructureBody());
         nested_level--;
-        System.out.println();
         System.out.print("}while ");
         visitExpression(ctx.expression());
         System.out.println();

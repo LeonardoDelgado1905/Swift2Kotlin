@@ -19,13 +19,14 @@ p += j[3]
 
 val x = 5
 var y: String = "hola"
-final val y: Double get(){
-        var z = y+3
-        return z
-    }
 
 while (x > 0) {
     x--
+}
+
+final val y: Double get(){
+    var z = y+3
+    return z
 }
 
 
