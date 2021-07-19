@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
+public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
 
 
     int nested_level = 0;
@@ -43,12 +43,11 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
     @Override
     public T visitPostfixUnaryExpression(KotlinParser.PostfixUnaryExpressionContext ctx) {
 
-        if(ctx.primaryExpression().simpleIdentifier() != null && ctx.primaryExpression().simpleIdentifier().getText().equals("print")){
+        if (ctx.primaryExpression().simpleIdentifier() != null && ctx.primaryExpression().simpleIdentifier().getText().equals("print")) {
             print_tabs();
             visitPrimaryExpression(ctx.primaryExpression());
             System.out.println(ctx.postfixUnarySuffix(0).getText());
-        }
-        else{
+        } else {
             visitPrimaryExpression(ctx.primaryExpression());
             if (ctx.postfixUnarySuffix() != null) {
                 for (int i = 0; i < ctx.postfixUnarySuffix().size(); i++) {
@@ -62,7 +61,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     @Override
     public T visitPrimaryExpression(KotlinParser.PrimaryExpressionContext ctx) {
-        if(ctx.literalConstant() == null && ctx.stringLiteral() == null && ctx.thisExpression() == null && ctx.simpleIdentifier() == null){
+        if (ctx.literalConstant() == null && ctx.stringLiteral() == null && ctx.thisExpression() == null && ctx.simpleIdentifier() == null) {
             print_tabs();
         }
         if (ctx.literalConstant() != null ||
@@ -107,7 +106,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         System.out.println(" {");
         if (ctx.whenEntry() != null) {
             for (int i = 0; i < ctx.whenEntry().size(); i++) {
-               visitWhenEntry(ctx.whenEntry(i));
+                visitWhenEntry(ctx.whenEntry(i));
                 System.out.println();
             }
         }
@@ -117,32 +116,32 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     @Override
     public T visitWhenEntry(KotlinParser.WhenEntryContext ctx) {
-        if(ctx.whenCondition() != null){
-            for(int i = 0; i < ctx.whenCondition().size(); i++){
-                if(ctx.whenCondition(i).expression() != null){
+        if (ctx.whenCondition() != null) {
+            for (int i = 0; i < ctx.whenCondition().size(); i++) {
+                if (ctx.whenCondition(i).expression() != null) {
                     visitExpression(ctx.whenCondition(i).expression());
-                }else if(ctx.whenCondition(i).rangeTest() != null){
+                } else if (ctx.whenCondition(i).rangeTest() != null) {
                     visitRangeTest(ctx.whenCondition(i).rangeTest());
-                }else{
+                } else {
                     return null;
                     //TODO
                 }
-                if(i != ctx.whenCondition().size() - 1){
+                if (i != ctx.whenCondition().size() - 1) {
                     System.out.print(", ");
-                }else{
+                } else {
                     System.out.println(":");
                 }
             }
-            if(ctx.controlStructureBody().block() != null){
+            if (ctx.controlStructureBody().block() != null) {
                 visitStatements(ctx.controlStructureBody().block().statements());
-            }else{
+            } else {
                 visitStatement(ctx.controlStructureBody().statement());
             }
-        }else{
+        } else {
             System.out.println("default:");
-            if(ctx.controlStructureBody().block() != null){
+            if (ctx.controlStructureBody().block() != null) {
                 visitStatements(ctx.controlStructureBody().block().statements());
-            }else{
+            } else {
                 visitStatement(ctx.controlStructureBody().statement());
             }
         }
@@ -151,7 +150,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     @Override
     public T visitRangeTest(KotlinParser.RangeTestContext ctx) {
-        System.out.print(ctx.inOperator().getText()+ " ");
+        System.out.print(ctx.inOperator().getText() + " ");
         visitExpression(ctx.expression());
         return null;
     }
@@ -182,7 +181,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         print_tabs();
         System.out.print("while ");
         visitExpression(ctx.expression());
-        if(ctx.controlStructureBody() != null){
+        if (ctx.controlStructureBody() != null) {
             System.out.println(" {");
             nested_level++;
             visitControlStructureBody(ctx.controlStructureBody());
@@ -190,7 +189,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
             nested_level--;
             print_tabs();
             System.out.println("}");
-        }else{
+        } else {
 
             System.out.println(";");
         }
@@ -377,7 +376,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         System.out.print(ctx.getText());
         return null;
     }
-    
+
     @Override
     public T visitControlStructureBody(KotlinParser.ControlStructureBodyContext ctx) {
         return super.visitControlStructureBody(ctx);
@@ -389,17 +388,17 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         System.out.print("(");
         visitExpression(ctx.expression());
         System.out.println("){");
-        if(ctx.controlStructureBody(0) != null){
+        if (ctx.controlStructureBody(0) != null) {
             nested_level++;
             visitControlStructureBody(ctx.controlStructureBody(0));
             nested_level--;
-            if(ctx.controlStructureBody(1) != null){
+            if (ctx.controlStructureBody(1) != null) {
                 System.out.println("}else{");
                 nested_level++;
                 visitControlStructureBody(ctx.controlStructureBody(1));
                 nested_level--;
             }
-        }else{
+        } else {
             System.out.print("else");
             nested_level++;
             visitControlStructureBody(ctx.controlStructureBody(0));
@@ -438,5 +437,88 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         System.out.println("}");
         return null;
     }
+
+    @Override
+    public T visitModifier(KotlinParser.ModifierContext ctx) {
+        System.out.print(ctx.getText());
+        return null;
+    }
+
+    @Override
+    public T visitAnnotation(KotlinParser.AnnotationContext ctx) {
+        System.out.print(ctx.getText());
+        return null;
+    }
+
+    @Override
+    public T visitPrimaryConstructor(KotlinParser.PrimaryConstructorContext ctx) {
+        if (ctx.CONSTRUCTOR() != null) {
+            System.out.print("init ");
+
+        }
+        visitClassParameters(ctx.classParameters());
+        return null;
+    }
+
+    @Override
+    public T visitClassParameters(KotlinParser.ClassParametersContext ctx) {
+        System.out.print("(");
+        if (ctx.classParameter() != null) {
+            visitClassParameter(ctx.classParameter().get(0));
+            if (ctx.classParameter().size() > 1) {
+                for (int i = 1; i < ctx.classParameter().size(); i++) {
+                    System.out.print(", ");
+                    visitClassParameter(ctx.classParameter().get(i));
+                }
+            }
+        }
+        System.out.print(")");
+        return null;
+    }
+
+    @Override
+    public T visitClassParameter(KotlinParser.ClassParameterContext ctx) {
+        if (ctx.modifiers() != null) {
+            visitModifiers(ctx.modifiers());
+        }
+        if (ctx.VAL() != null) {
+            System.out.print("let ");
+        }
+        if (ctx.VAR() != null) {
+            System.out.print("var ");
+        }
+
+        visitSimpleIdentifier(ctx.simpleIdentifier());
+        System.out.print(ctx.type_().getText());
+        if (ctx.expression() != null) {
+            System.out.print(" = ");
+            visitExpression(ctx.expression());
+        }
+        return null;
+    }
+
+
+    @Override
+    public T visitClassDeclaration(KotlinParser.ClassDeclarationContext ctx) {
+        if (ctx.modifiers() != null) {
+            visitModifiers(ctx.modifiers());
+        }
+        if (ctx.CLASS() != null) {
+            System.out.print("class ");
+        }
+        if (ctx.INTERFACE() != null) {
+            System.out.print("protocol ");
+        }
+
+        visitSimpleIdentifier(ctx.simpleIdentifier());
+        System.out.print(ctx.typeParameters().getText());
+
+        // Declararlo dentro del body
+        //visitPrimaryConstructor(ctx.primaryConstructor());
+
+
+        return null;
+    }
+
 }
 
