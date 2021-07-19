@@ -40,8 +40,11 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     @Override
     public T visitPostfixUnaryExpression(KotlinParser.PostfixUnaryExpressionContext ctx) {
+        if(ctx.primaryExpression().simpleIdentifier() != null){
 
-        if(ctx.primaryExpression().simpleIdentifier() != null && (ctx.primaryExpression().simpleIdentifier().getText().equals("print") || ctx.getText().contains("--") || ctx.getText().contains("++"))){
+            if((ctx.primaryExpression().simpleIdentifier().getText().equals("print") || ctx.primaryExpression().simpleIdentifier().getText().equals("println")  ||ctx.getText().contains("--") || ctx.getText().contains("++"))){
+
+            }
             print_tabs();
             visitPrimaryExpression(ctx.primaryExpression());
             if (ctx.postfixUnarySuffix() != null) {
@@ -434,6 +437,37 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         nested_level--;
         print_tabs();
         System.out.println("}");
+        return null;
+    }
+
+    @Override
+    public T visitFunctionDeclaration(KotlinParser.FunctionDeclarationContext ctx) {
+        print_tabs();
+        if(ctx.modifiers() != null){
+            System.out.print(ctx.modifiers().getText());
+        }
+        System.out.print("func ");
+        if(ctx.typeParameters() != null){
+            System.out.print(ctx.typeParameters().getText() + " ");
+        }
+        if(ctx.receiverType() != null){
+            System.out.print(ctx.receiverType().getText() + " ");
+        }
+        System.out.print(ctx.simpleIdentifier().getText() + "(");
+        System.out.print(ctx.functionValueParameters().getText() + ") ");
+        if(ctx.type_() != null){
+            System.out.print(ctx.type_().getText());
+        }
+        if(ctx.typeConstraints() != null){
+            System.out.print(ctx.typeConstraints().getText());
+        }
+        if(ctx.functionBody() != null){
+            System.out.println("{");
+            nested_level++;
+            visitFunctionBody(ctx.functionBody());
+            nested_level--;
+            System.out.println("}");
+        }
         return null;
     }
 }

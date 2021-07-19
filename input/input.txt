@@ -31,4 +31,16 @@ final val y: Double get(){
 
 
 for (item in collection) print(item)
+
+
+fun main(args: Array<String>) {
+    showMyName()
+    showMyLastName()
+    showMyAge()
+    println(2)
 }
+
+
+
+}
+
