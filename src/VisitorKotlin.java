@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
     int nested_level = 0;
@@ -343,19 +346,29 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
 
         if(ctx.type_() != null){
             System.out.print(" : ");
-            if(ctx.type_().typeReference() != null && ctx.type_().typeReference().userType() != null && ctx.type_().typeReference().userType().simpleUserType() != null){
-                if(ctx.type_().typeReference().userType().simpleUserType(0).simpleIdentifier().getText().equals("List")){
-                    System.out.print("[" + ctx.type_().typeReference().userType().simpleUserType(0).typeArguments().typeProjection(0).type_().getText() + "] ");
-                }
-                else{
-                    System.out.print(ctx.type_().typeReference().userType().simpleUserType(0).getText());
-                }
-            }
-            else {
-                System.out.print(ctx.type_().getText());
-            }
+            visitType_(ctx.type_());
         }
 
+        return null;
+    }
+
+    @Override
+    public T visitType_(KotlinParser.Type_Context ctx) {
+        if(ctx.typeReference() != null && ctx.typeReference().userType() != null && ctx.typeReference().userType().simpleUserType() != null){
+            List<KotlinParser.SimpleUserTypeContext> sut = ctx.typeReference().userType().simpleUserType();
+            for(int i = 0; i < sut.size(); ++i){
+                if(sut.get(i).simpleIdentifier().getText().equals("List")){
+                    System.out.print("Array" + sut.get(i).typeArguments().getText() + " ");
+                } else if(sut.get(i).simpleIdentifier().getText().equals("Map")){
+                    System.out.print("Dictionary" + sut.get(i).typeArguments().getText() + " ");
+                }
+                else{
+                    System.out.print(sut.get(i).getText());
+                }
+            }
+        } else {
+            System.out.print(ctx.getText());
+        }
         return null;
     }
 
@@ -386,6 +399,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
     @Override
     public T visitFunctionBody(KotlinParser.FunctionBodyContext ctx) {
         if (ctx.ASSIGNMENT() != null) {
+            print_tabs();
             System.out.print("return ");
             visitExpression(ctx.expression());
             System.out.println();

@@ -1,4 +1,16 @@
 {
+    val mySet: Set<Any> = setOf(2,6,4,29,5,"Ashu","Ajay")
+    var x = 3
+    interface MyInterface {
+     var myVariable: Int
+     get() = 0
+     fun printMe()
+     fun implementMe() {
+     // do stuff here
+     }
+    }
+    val x = 2
+    val myMap: Map<Int,String> = mapOf<Int, String>(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
     val sudoers: List<Int> = systemUser
     open class Polygon{
         open fun draw(): Unit{
