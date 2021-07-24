@@ -38,8 +38,13 @@ fun main(args: Array<String>) {
     showMyLastName()
     showMyAge()
     println(2)
+    x++
 }
 
+
+fun suma(a: Double, b: Double): Double{
+    return a + b
+}
 
 
 }
