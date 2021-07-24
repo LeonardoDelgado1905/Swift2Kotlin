@@ -376,7 +376,6 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         return null;
     }
 
-
     @Override
     public T visitSimpleIdentifier(KotlinParser.SimpleIdentifierContext ctx) {
         System.out.print(ctx.getText());
