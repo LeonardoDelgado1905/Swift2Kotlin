@@ -1,57 +1,14 @@
 {
-do {
-    factorial *= number
-    number--
-}while(number > 0)
+    val sudoers: List<Int> = systemUser
+    open class Polygon{
+        open fun draw(): Unit{
+            this.a = b?.value ?: 4
+            b = this.a as? Int
+            return null
+        }
+    }
 
-if(a>b){
-    a = 3
-}else{
-    a = 5
+    abstract class Rectangle : Polygon() {
+        abstract override fun draw()
+    }
 }
-
-if(a>b); else print("a")
-
-s = (3*7)
-var p: Int
-var j = [1, 2, 3, 4]
-p += j[3]
-
-val x = 5
-var y: String = "hola"
-
-while (x > 0) {
-    x--
-}
-
-final val y: Double get(){
-    var z = y+3
-    return z
-}
-
-
-for (item in collection) print(item)
-
-
-fun main(args: Array<String>) {
-    showMyName()
-    showMyLastName()
-    showMyAge()
-    println(2)
-    x++
-}
-
-
-fun suma(a: Double, b: Double): Double{
-    return a + b
-}
-
-open fun draw() {
-
-}
-
-abstract override fun draw()
-
-abstract override fun draw()
-}
-
