@@ -1,5 +1,5 @@
-public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
-    
+public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
+
     int nested_level = 0;
     String parameters = "";
 
@@ -40,12 +40,17 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
 
     @Override
     public T visitPostfixUnaryExpression(KotlinParser.PostfixUnaryExpressionContext ctx) {
-
-        if (ctx.primaryExpression().simpleIdentifier() != null && ctx.primaryExpression().simpleIdentifier().getText().equals("print")) {
-            print_tabs();
+        if(ctx.primaryExpression().simpleIdentifier() != null){
+            if((ctx.postfixUnarySuffix() != null && ctx.postfixUnarySuffix().size() > 0 && ctx.postfixUnarySuffix(0).callSuffix() != null) || ctx.getText().contains("--") || ctx.getText().contains("++")){
+                print_tabs();
+            }
             visitPrimaryExpression(ctx.primaryExpression());
-            System.out.println(ctx.postfixUnarySuffix(0).getText());
-        } else {
+            if (ctx.postfixUnarySuffix() != null){
+                for(int i = 0; i < ctx.postfixUnarySuffix().size(); ++i){
+                    System.out.println(ctx.postfixUnarySuffix(i).getText());
+                }
+            }
+        }else{
             visitPrimaryExpression(ctx.primaryExpression());
             if (ctx.postfixUnarySuffix() != null) {
                 for (int i = 0; i < ctx.postfixUnarySuffix().size(); i++) {
@@ -53,13 +58,12 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
                 }
             }
         }
-
         return null;
     }
 
     @Override
     public T visitPrimaryExpression(KotlinParser.PrimaryExpressionContext ctx) {
-        if (ctx.literalConstant() == null && ctx.stringLiteral() == null && ctx.thisExpression() == null && ctx.simpleIdentifier() == null) {
+        if(ctx.literalConstant() == null && ctx.stringLiteral() == null && ctx.thisExpression() == null && ctx.simpleIdentifier() == null){
             print_tabs();
         }
         if (ctx.literalConstant() != null ||
@@ -157,9 +161,13 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
     public T visitJumpExpression(KotlinParser.JumpExpressionContext ctx) {
         if (ctx.RETURN() != null) {
             System.out.print("return ");
+            if(ctx.expression() != null){
+                visitExpression(ctx.expression());
+            }
         }
         if (ctx.THROW() != null) {
             System.out.print("throw ");
+            visitExpression(ctx.expression());
         }
         if (ctx.CONTINUE() != null) {
             System.out.print("continue");
@@ -183,12 +191,10 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
             System.out.println(" {");
             nested_level++;
             visitControlStructureBody(ctx.controlStructureBody());
-            System.out.println();
             nested_level--;
             print_tabs();
             System.out.println("}");
-        } else {
-
+        }else{
             System.out.println(";");
         }
         return null;
@@ -291,6 +297,8 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
             nested_level++;
             visitGetter(ctx.getter());
             if (!hasSetter) {
+                nested_level--;
+                print_tabs();
                 System.out.println("}");
             }
         }
@@ -413,7 +421,6 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
         nested_level++;
         visitControlStructureBody(ctx.controlStructureBody());
         nested_level--;
-        System.out.println();
         System.out.print("}while ");
         visitExpression(ctx.expression());
         System.out.println();
@@ -578,5 +585,37 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
         return null;
     }
 
+    public T visitFunctionDeclaration(KotlinParser.FunctionDeclarationContext ctx) {
+        print_tabs();
+        if(ctx.modifiers() != null){
+            System.out.print(ctx.modifiers().getText());
+        }
+        System.out.print("func ");
+        if(ctx.typeParameters() != null){
+            System.out.print(ctx.typeParameters().getText() + " ");
+        }
+        if(ctx.receiverType() != null){
+            System.out.print("-> " + ctx.receiverType().getText() + " ");
+        }
+        System.out.print(ctx.simpleIdentifier().getText());
+        boolean parenthesize = ctx.functionValueParameters().getText().charAt(0) != '(';
+        if(parenthesize) System.out.print("(");
+        System.out.print(ctx.functionValueParameters().getText());
+        if(parenthesize) System.out.print(")");
+        if(ctx.type_() != null){
+            System.out.print("->"+ctx.type_().getText());
+        }
+        if(ctx.typeConstraints() != null){
+            System.out.print(ctx.typeConstraints().getText());
+        }
+        if(ctx.functionBody() != null){
+            System.out.println("{");
+            nested_level++;
+            visitFunctionBody(ctx.functionBody());
+            nested_level--;
+            System.out.println("}");
+        }
+        return null;
+    }
 }
 
