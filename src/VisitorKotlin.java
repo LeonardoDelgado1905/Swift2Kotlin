@@ -165,20 +165,18 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
             if(ctx.expression() != null){
                 visitExpression(ctx.expression());
             }
+            System.out.println();
         }
-        if (ctx.THROW() != null) {
+        else if (ctx.THROW() != null) {
             System.out.print("throw ");
             visitExpression(ctx.expression());
+            System.out.println();
         }
-        if (ctx.CONTINUE() != null) {
+        else if (ctx.CONTINUE() != null) {
             System.out.print("continue");
         }
-        if (ctx.BREAK() != null) {
+        else if (ctx.BREAK() != null) {
             System.out.print("break");
-        }
-        if (ctx.expression() != null) {
-            visitExpression(ctx.expression());
-            System.out.println();
         }
         return null;
     }
@@ -340,7 +338,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
         nested_level--;
         print_tabs();
         System.out.println("}");
-        return super.visitSetter(ctx);
+        return null;
     }
 
     @Override
@@ -448,7 +446,9 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T>{
     public T visitFunctionDeclaration(KotlinParser.FunctionDeclarationContext ctx) {
         print_tabs();
         if(ctx.modifiers() != null){
-            System.out.print(ctx.modifiers().getText());
+            for(int i = 0; i < ctx.modifiers().size(); ++i){
+                System.out.print(ctx.modifiers().getText() + " ");
+            }
         }
         System.out.print("func ");
         if(ctx.typeParameters() != null){

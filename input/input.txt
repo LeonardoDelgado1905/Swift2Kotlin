@@ -46,6 +46,12 @@ fun suma(a: Double, b: Double): Double{
     return a + b
 }
 
+open fun draw() {
 
+}
+
+abstract override fun draw()
+
+abstract override fun draw()
 }
 
