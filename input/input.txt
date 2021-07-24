@@ -1,14 +1,3 @@
 {
-    val sudoers: List<Int> = systemUser
-    open class Polygon{
-        open fun draw(): Unit{
-            this.a = b?.value ?: 4
-            b = this.a as? Int
-            return null
-        }
-    }
-
-    abstract class Rectangle : Polygon() {
-        abstract override fun draw()
-    }
+val name by lazy { "ABC" }
 }
