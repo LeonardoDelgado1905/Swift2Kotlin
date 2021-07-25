@@ -1,5 +1,4 @@
 {
-   fun getSomeData(n: Int): Result<Data> =
         try {
             if (n > 0) {
                 Result.success(getData())
