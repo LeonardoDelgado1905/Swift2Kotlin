@@ -76,8 +76,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
                         ctx.simpleIdentifier() != null ||
                         ctx.objectLiteral() != null ||
                         ctx.collectionLiteral() != null ||
-                        ctx.superExpression() != null ||
-                        ctx.literalConstant() != null) {
+                        ctx.superExpression() != null ) {
             System.out.print(ctx.getText());
         } else if (ctx.parenthesizedExpression() != null) {
             visitParenthesizedExpression(ctx.parenthesizedExpression());
@@ -93,9 +92,9 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
             System.out.print("self");
         } else if (ctx.literalConstant() != null) {
             if (ctx.literalConstant().getText().equals("null")) {
-                System.out.println("nil");
+                System.out.print("nil");
             } else {
-                ctx.literalConstant().getText();
+                System.out.print(ctx.literalConstant().getText());
             }
         } else {
             System.out.println("Error");
@@ -139,7 +138,6 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
                     visitRangeTest(ctx.whenCondition(i).rangeTest());
                 } else {
                     return null;
-                    //TODO
                 }
                 if (i != ctx.whenCondition().size() - 1) {
                     System.out.print(", ");
@@ -316,7 +314,8 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
             System.out.print(ctx.expression().getText() + " ");
         }
         if (ctx.propertyDelegate() != null) {
-            System.out.print(ctx.propertyDelegate().getText() + " ");
+            System.out.print(" by ");
+            visitExpression(ctx.propertyDelegate().expression());
         }
         boolean hasGetter = ctx.getter() != null, hasSetter = ctx.setter() != null;
         if (hasGetter) {
@@ -479,6 +478,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
             visitControlStructureBody(ctx.controlStructureBody(0));
             nested_level--;
         }
+        print_tabs();
         System.out.println("}");
 
         return null;
