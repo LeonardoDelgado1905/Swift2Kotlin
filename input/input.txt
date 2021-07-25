@@ -1,3 +1,8 @@
 {
-
+fun getName(b:Any):String?{
+       if (b is String) {
+           return b;
+       }
+       return null;
+   }
 }

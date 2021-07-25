@@ -692,5 +692,13 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
         }
         return null;
     }
+
+    @Override
+    public T visitIsOperator(KotlinParser.IsOperatorContext ctx) {
+        System.out.print(" "+ctx.getText()+" ");
+        return null;
+    }
+
+
 }
 
