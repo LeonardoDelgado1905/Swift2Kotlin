@@ -102,6 +102,47 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
         return null;
     }
 
+    @Override
+    public T visitTryExpression(KotlinParser.TryExpressionContext ctx) {
+        System.out.println("try {");
+        nested_level++;
+        visitBlock(ctx.block());
+        nested_level--;
+        if(ctx.catchBlock().size() > 0){
+            for(int i = 0; i < ctx.catchBlock().size(); i++){
+                System.out.print("}");
+                visitCatchBlock(ctx.catchBlock(i));
+                System.out.println();
+            }
+            if(ctx.finallyBlock() != null){
+                visitFinallyBlock(ctx.finallyBlock());
+            }
+        }else{
+            visitFinallyBlock(ctx.finallyBlock());
+        }
+
+        return null;
+    }
+
+    @Override
+    public T visitCatchBlock(KotlinParser.CatchBlockContext ctx) {
+        System.out.print(" catch (");
+
+        for(int i = 0; i < ctx.annotation().size(); i++){
+            System.out.print(ctx.annotation(i).getText());
+        }
+
+        System.out.print(ctx.simpleIdentifier().getText());
+        System.out.print(" : ");
+        System.out.print(ctx.userType().getText());
+        System.out.println(") {");
+        nested_level++;
+        visitBlock(ctx.block());
+        nested_level--;
+        System.out.println("}");
+
+        return null;
+    }
 
     @Override
     public T visitParenthesizedExpression(KotlinParser.ParenthesizedExpressionContext ctx) {
@@ -447,6 +488,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
 
     @Override
     public T visitSimpleIdentifier(KotlinParser.SimpleIdentifierContext ctx) {
+        print_tabs();
         System.out.print(ctx.getText());
         return null;
     }
