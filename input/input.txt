@@ -1,3 +1,12 @@
 {
-
+   fun getSomeData(n: Int): Result<Data> =
+        try {
+            if (n > 0) {
+                Result.success(getData())
+            } else {
+                Result.success(getDefaultData())
+            }
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
 }

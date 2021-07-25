@@ -123,7 +123,6 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
                 System.out.println();
             }
         }
-        print_tabs();
         System.out.println("}");
         return null;
     }
