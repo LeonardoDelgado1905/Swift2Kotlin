@@ -44,15 +44,23 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
     @Override
     public T visitPostfixUnaryExpression(KotlinParser.PostfixUnaryExpressionContext ctx) {
         if (ctx.primaryExpression().simpleIdentifier() != null) {
-            if ((ctx.postfixUnarySuffix() != null && ctx.postfixUnarySuffix().size() > 0 && ctx.postfixUnarySuffix(0).callSuffix() != null) || ctx.getText().contains("--") || ctx.getText().contains("++")) {
+            boolean interesting_thing =(ctx.postfixUnarySuffix() != null && ctx.postfixUnarySuffix().size() > 0 /*&& ctx.postfixUnarySuffix(0).callSuffix() != null*/) || ctx.getText().contains("--") || ctx.getText().contains("++");
+            if (interesting_thing) {
                 print_tabs();
             }
             visitPrimaryExpression(ctx.primaryExpression());
+            boolean just_print = ctx.primaryExpression().getText().equals("print");
+            boolean print_endline = ctx.primaryExpression().getText().equals("println");
             if (ctx.postfixUnarySuffix() != null) {
                 for (int i = 0; i < ctx.postfixUnarySuffix().size(); ++i) {
-                    System.out.print(ctx.postfixUnarySuffix(i).getText());
+                    String val = ctx.postfixUnarySuffix(i).getText();
+                    if(just_print && i == ctx.postfixUnarySuffix().size() - 1){
+                        if(val.length() >= 2)  val = val.substring(0, val.length() - 1) + ", terminator:\"\")";
+                    }
+                    System.out.print(val);
                 }
             }
+            if(interesting_thing)System.out.println();
         } else {
             visitPrimaryExpression(ctx.primaryExpression());
             if (ctx.postfixUnarySuffix() != null) {
@@ -77,7 +85,9 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
                         ctx.objectLiteral() != null ||
                         ctx.collectionLiteral() != null ||
                         ctx.superExpression() != null ) {
-            System.out.print(ctx.getText());
+            String val = ctx.getText();
+            if(ctx.getText().equals("println")) val = "print";
+            System.out.print(val);
         } else if (ctx.parenthesizedExpression() != null) {
             visitParenthesizedExpression(ctx.parenthesizedExpression());
         } else if (ctx.ifExpression() != null) {
@@ -509,12 +519,14 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
             visitControlStructureBody(ctx.controlStructureBody(0));
             nested_level--;
             if (ctx.controlStructureBody(1) != null) {
+                print_tabs();
                 System.out.println("}else{");
                 nested_level++;
                 visitControlStructureBody(ctx.controlStructureBody(1));
                 nested_level--;
             }
         } else {
+            print_tabs();
             System.out.print("else");
             nested_level++;
             visitControlStructureBody(ctx.controlStructureBody(0));
