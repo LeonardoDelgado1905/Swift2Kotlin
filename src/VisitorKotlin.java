@@ -6,6 +6,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
     int nested_level = 0;
     String parameters = "";
     boolean statement_inline = false;
+    boolean in_parentezise = false;
     void print_tabs() {
         for (int i = 0; i < nested_level; ++i) {
             System.out.print("\t");
@@ -48,7 +49,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
             for(int i = 0; ctx.postfixUnarySuffix() != null && i < ctx.postfixUnarySuffix().size(); ++i){
                 if(ctx.postfixUnarySuffix(i).callSuffix() != null) call_sufix = true;
             }
-            boolean interesting_thing = (call_sufix && !statement_inline) || ctx.getText().contains("--") || ctx.getText().contains("++");
+            boolean interesting_thing = (call_sufix && !statement_inline && !in_parentezise) || ctx.getText().contains("--") || ctx.getText().contains("++");
             if (interesting_thing) {
                 print_tabs();
             }
@@ -69,7 +70,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
                     }
                 }
             }
-            if(interesting_thing)System.out.println();
+            if(interesting_thing && !in_parentezise) System.out.println();
         } else {
             visitPrimaryExpression(ctx.primaryExpression());
             if (ctx.postfixUnarySuffix() != null) {
@@ -83,7 +84,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
 
     @Override
     public T visitPrimaryExpression(KotlinParser.PrimaryExpressionContext ctx) {
-        if (ctx.literalConstant() == null && ctx.stringLiteral() == null && ctx.thisExpression() == null && ctx.simpleIdentifier() == null) {
+        if (ctx.literalConstant() == null && ctx.stringLiteral() == null && ctx.thisExpression() == null && ctx.simpleIdentifier() == null && ctx.parenthesizedExpression() == null) {
             print_tabs();
         }
         if (
@@ -167,7 +168,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
     public T visitParenthesizedExpression(KotlinParser.ParenthesizedExpressionContext ctx) {
         System.out.print("(");
         visitExpression(ctx.expression());
-        System.out.println(")");
+        System.out.print(")");
         return null;
     }
 
@@ -255,7 +256,9 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
     public T visitWhileStatement(KotlinParser.WhileStatementContext ctx) {
         print_tabs();
         System.out.print("while ");
+        in_parentezise = true;
         visitExpression(ctx.expression());
+        in_parentezise = false;
         if (ctx.controlStructureBody() != null) {
             System.out.println(" {");
             nested_level++;
@@ -526,7 +529,9 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
     public T visitIfExpression(KotlinParser.IfExpressionContext ctx) {
         System.out.print("if");
         System.out.print("(");
+        in_parentezise = true;
         visitExpression(ctx.expression());
+        in_parentezise = false;
         System.out.println("){");
         if (ctx.controlStructureBody(0) != null) {
             nested_level++;
@@ -568,7 +573,9 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
     public T visitForStatement(KotlinParser.ForStatementContext ctx) {
         print_tabs();
         System.out.print("for ");
+        in_parentezise = true;
         visitVariableDeclaration(ctx.variableDeclaration());
+        in_parentezise = false;
         System.out.print(" in ");
         visitExpression(ctx.expression());
         System.out.println("{");

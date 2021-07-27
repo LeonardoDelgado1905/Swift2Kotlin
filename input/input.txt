@@ -1,14 +1,9 @@
-fun main(vararg args: String) {
-    if (args.size != 1) {
-        println("usage: <app> <script file>")
-    } else {
-        val scriptFile = File(args[0])
-        println("Executing script $scriptFile")
-
-        val res = evalFile(scriptFile)
-
-        res.reports.forEach {
-            println(" : ${it.message}" + if (it.exception == null) "" else ": ${it.exception}")
-        }
-    }
+var r = 1000
+var l = 0
+while (r - l > 1) {
+    val m = (l + r) / 2  // compute the midpoint of l..r interval
+    if (ok(m))
+        r = m  // Maintain invariant: ok(r) is true
+    else
+        l = m  // Maintain invariant: ok(l) is false
 }
