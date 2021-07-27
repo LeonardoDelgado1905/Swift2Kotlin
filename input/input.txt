@@ -1,13 +1,14 @@
-{
-        try {
-            if (n > 0) {
-                Result.success(getData())
-                print("hat")
-                println("no puede ser")
-            } else {
-                Result.success(getDefaultData())
-            }
-        } catch (e: Exception) {
-            Result.failure(e)
+fun main(vararg args: String) {
+    if (args.size != 1) {
+        println("usage: <app> <script file>")
+    } else {
+        val scriptFile = File(args[0])
+        println("Executing script $scriptFile")
+
+        val res = evalFile(scriptFile)
+
+        res.reports.forEach {
+            println(" : ${it.message}" + if (it.exception == null) "" else ": ${it.exception}")
         }
+    }
 }

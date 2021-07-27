@@ -5,7 +5,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
 
     int nested_level = 0;
     String parameters = "";
-
+    boolean statement_inline = false;
     void print_tabs() {
         for (int i = 0; i < nested_level; ++i) {
             System.out.print("\t");
@@ -44,7 +44,11 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
     @Override
     public T visitPostfixUnaryExpression(KotlinParser.PostfixUnaryExpressionContext ctx) {
         if (ctx.primaryExpression().simpleIdentifier() != null) {
-            boolean interesting_thing =(ctx.postfixUnarySuffix() != null && ctx.postfixUnarySuffix().size() > 0 /*&& ctx.postfixUnarySuffix(0).callSuffix() != null*/) || ctx.getText().contains("--") || ctx.getText().contains("++");
+            boolean call_sufix = false;
+            for(int i = 0; ctx.postfixUnarySuffix() != null && i < ctx.postfixUnarySuffix().size(); ++i){
+                if(ctx.postfixUnarySuffix(i).callSuffix() != null) call_sufix = true;
+            }
+            boolean interesting_thing = (call_sufix && !statement_inline) || ctx.getText().contains("--") || ctx.getText().contains("++");
             if (interesting_thing) {
                 print_tabs();
             }
@@ -53,11 +57,16 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
             boolean print_endline = ctx.primaryExpression().getText().equals("println");
             if (ctx.postfixUnarySuffix() != null) {
                 for (int i = 0; i < ctx.postfixUnarySuffix().size(); ++i) {
-                    String val = ctx.postfixUnarySuffix(i).getText();
-                    if(just_print && i == ctx.postfixUnarySuffix().size() - 1){
-                        if(val.length() >= 2)  val = val.substring(0, val.length() - 1) + ", terminator:\"\")";
+                    if(ctx.postfixUnarySuffix(i).callSuffix() != null && ctx.postfixUnarySuffix(i).callSuffix().annotatedLambda() != null){
+                        visitAnnotatedLambda(ctx.postfixUnarySuffix(i).callSuffix().annotatedLambda());
                     }
-                    System.out.print(val);
+                    else{
+                        String val = ctx.postfixUnarySuffix(i).getText();
+                        if(just_print && i == ctx.postfixUnarySuffix().size() - 1){
+                            if(val.length() >= 2)  val = val.substring(0, val.length() - 1) + ", terminator:\"\")";
+                        }
+                        System.out.print(val);
+                    }
                 }
             }
             if(interesting_thing)System.out.println();
@@ -329,6 +338,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
 
     @Override
     public T visitPropertyDeclaration(KotlinParser.PropertyDeclarationContext ctx) {
+        statement_inline = true;
         print_tabs();
         if (ctx.modifiers() != null) {
             visitModifiers(ctx.modifiers());
@@ -362,7 +372,8 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
             System.out.print(" = ");
         }
         if (ctx.expression() != null) {
-            System.out.print(ctx.expression().getText() + " ");
+            //System.out.print(ctx.expression().getText() + " ");
+            visitExpression(ctx.expression());
         }
         if (ctx.propertyDelegate() != null) {
             System.out.print(" by ");
@@ -393,6 +404,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
             nested_level--;
         }
         System.out.println();
+        statement_inline = false;
         return null;
     }
 
@@ -472,6 +484,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
 
     @Override
     public T visitAssignment(KotlinParser.AssignmentContext ctx) {
+        statement_inline = true;
         print_tabs();
         if (ctx.directlyAssignableExpression() != null) {
             visitDirectlyAssignableExpression(ctx.directlyAssignableExpression());
@@ -482,6 +495,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
         }
         visitExpression(ctx.expression());
         System.out.println();
+        statement_inline = false;
         return null;
     }
 
@@ -498,7 +512,7 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
 
     @Override
     public T visitSimpleIdentifier(KotlinParser.SimpleIdentifierContext ctx) {
-        print_tabs();
+        //print_tabs();
         System.out.print(ctx.getText());
         return null;
     }
@@ -744,6 +758,31 @@ public class VisitorKotlin<T> extends KotlinParserBaseVisitor<T> {
         } else {
             System.out.println();
         }
+        return null;
+    }
+
+    @Override
+    public T visitAnnotatedLambda(KotlinParser.AnnotatedLambdaContext ctx) {
+        if(ctx.annotation() != null){
+            for(int i = 0; i  < ctx.annotation().size(); ++i){
+                visitAnnotation(ctx.annotation(i));
+            }
+        }
+        if(ctx.label() != null){
+            System.out.print(ctx.label().getText() + " ");
+        }
+        visitLambdaLiteral(ctx.lambdaLiteral());
+        return null;
+    }
+
+    @Override
+    public T visitLambdaLiteral(KotlinParser.LambdaLiteralContext ctx) {
+        System.out.println("{");
+        nested_level++;
+        visitStatements(ctx.statements());
+        nested_level--;
+        print_tabs();
+        System.out.println("}");
         return null;
     }
 }

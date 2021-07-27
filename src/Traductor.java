@@ -6,7 +6,7 @@ public class Traductor {
         KotlinLexer lexer = new KotlinLexer(CharStreams.fromFileName("input/input.txt"));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         KotlinParser parser = new KotlinParser(tokens);
-        ParseTree tree = parser.block();
+        ParseTree tree = parser.script();
 
         VisitorKotlin<Object> loader = new VisitorKotlin<Object>();
         loader.visit(tree);
